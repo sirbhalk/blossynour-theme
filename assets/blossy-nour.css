@@ -584,3 +584,22 @@ html[dir="rtl"] .bn-title { line-height: 1.35; }
 html[dir="rtl"] .bn-hero__media::after { background: linear-gradient(270deg, rgba(251, 245, 238, 0.95) 0%, rgba(251, 245, 238, 0.75) 45%, rgba(251, 245, 238, 0) 80%); }
 /* the Darija line repeats the heading on the Arabic version */
 html[lang="ar"] .bn-ar { display: none; }
+
+/* ---------- thank you page ---------- */
+.bn-ty__badge { width: 84px; height: 84px; margin: 0 auto 22px; border-radius: 999px 999px 24px 24px; background: var(--bn-blush); color: var(--bn-plum); display: grid; place-items: center; box-shadow: var(--bn-shadow); }
+.bn-ty__badge svg { width: 46px; height: 46px; }
+.bn-ty__steps { list-style: none; margin: 36px auto 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; position: relative; text-align: center; }
+.bn-ty__steps::before { content: ''; position: absolute; top: 20px; inset-inline: 12.5%; height: 1px; background: var(--bn-gold); }
+.bn-ty__step { position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.bn-ty__dot { width: 40px; height: 40px; border-radius: 999px; background: var(--bn-white); border: 1px solid var(--bn-gold); color: var(--bn-terracotta); display: grid; place-items: center; font-family: var(--bn-heading); font-size: 1.05rem; }
+.bn-ty__step.is-done .bn-ty__dot { background: var(--bn-plum); border-color: var(--bn-plum); color: var(--bn-cream); }
+.bn-ty__dot svg { width: 22px; height: 22px; }
+.bn-ty__label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--bn-muted); line-height: 1.4; }
+.bn-ty__label strong { color: var(--bn-fg); font-weight: 500; font-size: 0.92rem; }
+.bn-cta__row .bn-btn .bn-inline-icon { color: currentColor; }
+@media (max-width: 749px) {
+  .bn-ty__steps { grid-template-columns: 1fr; gap: 18px; text-align: start; max-width: 340px; }
+  .bn-ty__steps::before { top: 20px; bottom: 20px; inset-inline-start: 20px; inset-inline-end: auto; width: 1px; height: auto; }
+  .bn-ty__step { flex-direction: row; align-items: flex-start; }
+  .bn-ty__dot { flex: 0 0 40px; }
+}

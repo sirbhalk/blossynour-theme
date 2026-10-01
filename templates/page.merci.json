@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "bn_thank_you": {
+      "type": "bn-thank-you",
+      "blocks": {
+        "bn_ty_1": { "type": "step", "settings": { "title": "Order received", "text": "Thank you for your trust" } },
+        "bn_ty_2": { "type": "step", "settings": { "title": "Confirmation", "text": "We call you or message you on WhatsApp" } },
+        "bn_ty_3": { "type": "step", "settings": { "title": "Shipping", "text": "Your parcel leaves in discreet packaging" } },
+        "bn_ty_4": { "type": "step", "settings": { "title": "Delivery", "text": "You check it, then pay in cash" } }
+      },
+      "block_order": ["bn_ty_1", "bn_ty_2", "bn_ty_3", "bn_ty_4"],
+      "settings": {
+        "eyebrow": "Order received",
+        "heading": "Thank you, your order is confirmed!",
+        "text": "<p>Your little hammam moment is on its way. We'll contact you very soon to confirm your order.</p>",
+        "tips_heading": "While you wait",
+        "tip1_title": "Keep your phone close",
+        "tip1_text": "We'll call you or message you on WhatsApp to confirm your order before shipping.",
+        "tip2_title": "Prepare the amount",
+        "tip2_text": "You pay in cash on delivery, after checking your parcel.",
+        "tip3_title": "A discreet parcel",
+        "tip3_text": "The outer box shows no product name.",
+        "help_heading": "A question about your order?",
+        "help_text": "<p>We're here for you on WhatsApp.</p>",
+        "phone": "+212771005580",
+        "wa_label": "Write to us on WhatsApp",
+        "wa_message": "Hello, I just placed an order on Blossy Nour",
+        "link_label": "Back to the shop",
+        "link_url": ""
+      }
+    }
+  },
+  "order": ["bn_thank_you"]
+}
