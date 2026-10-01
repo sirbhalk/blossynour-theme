@@ -1,0 +1,29 @@
+<section class="bn-section bn-safety bn-section--{{ section.settings.style }}" id="securite">
+  <div class="bn-container--narrow">
+    <div class="bn-safety__box">
+      <div class="bn-safety__head">
+        {% render 'bn-icon', name: 'warning' %}
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+      {{ section.settings.list }}
+      {%- if section.settings.note != blank -%}<p class="bn-safety__note">{{ section.settings.note }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Safety",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Sécurité & précautions" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "قريها قبل ما تستعملي" },
+    { "type": "richtext", "id": "list", "label": "Warnings", "default": "<ul><li>Usage externe uniquement. Ne pas boire, ne pas manger, ne rien introduire dans le vagin.</li><li>Risque de brûlure : ne jamais s'asseoir au-dessus d'une eau bouillante. Laissez refroidir et testez la vapeur avec la main.</li><li>Ne pas utiliser pendant la grossesse, l'allaitement, les règles, après un accouchement ou une opération sans avis médical.</li><li>Ne pas utiliser en cas de plaie, irritation, infection ou fièvre.</li><li>Contient de la camomille : ne pas utiliser en cas d'allergie aux Astéracées.</li><li>Arrêtez en cas de démangeaison, rougeur ou irritation.</li><li>Une odeur inhabituelle, des pertes ou une douleur nécessitent une consultation médicale.</li><li>Réservé aux plus de 18 ans. Tenir hors de portée des enfants.</li></ul>" },
+    { "type": "text", "id": "note", "label": "Note", "default": "Ce produit n'est pas un médicament. Il ne diagnostique, ne traite et ne prévient aucune maladie." },
+    { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }
+    ] }
+  ],
+  "presets": [ { "name": "BN · Safety" } ]
+}
+{% endschema %}

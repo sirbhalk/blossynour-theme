@@ -1,0 +1,23 @@
+{%- liquid
+  assign phone = section.settings.phone | remove: ' ' | remove: '+' | remove: '-'
+-%}
+{%- if phone != blank -%}
+  <a class="bn-wa" href="https://wa.me/{{ phone }}?text={{ section.settings.message | url_encode }}" target="_blank" rel="noopener" aria-label="WhatsApp">
+    {% render 'bn-icon', name: 'whatsapp' %}
+    <span class="bn-wa__label">{{ section.settings.label }}</span>
+  </a>
+{%- elsif request.design_mode -%}
+  <p class="bn-editor-note" style="margin:16px;">Ajoutez votre numéro WhatsApp Business dans cette section pour afficher le bouton.</p>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "BN · WhatsApp button",
+  "settings": [
+    { "type": "text", "id": "phone", "label": "WhatsApp number (international, e.g. 2126XXXXXXXX)" },
+    { "type": "text", "id": "label", "label": "Label", "default": "Commander sur WhatsApp" },
+    { "type": "text", "id": "message", "label": "Pre-filled message", "default": "Salam 🌹 Je veux commander le rituel Blossy Nour" }
+  ],
+  "presets": [ { "name": "BN · WhatsApp button" } ]
+}
+{% endschema %}

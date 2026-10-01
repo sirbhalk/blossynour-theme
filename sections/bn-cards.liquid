@@ -1,0 +1,72 @@
+<section class="bn-section bn-cards bn-section--{{ section.settings.style }}{% if section.settings.pattern %} bn-section--pattern{% endif %}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor | handleize }}"{% endif %}>
+  <div class="bn-container">
+    <div class="bn-center">
+      {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      {%- if section.settings.heading != blank -%}<h2 class="bn-title">{{ section.settings.heading }}</h2>{%- endif -%}
+      {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+      {%- if section.settings.text != blank -%}<div class="bn-lead">{{ section.settings.text }}</div>{%- else -%}<div class="bn-divider"><span></span></div>{%- endif -%}
+    </div>
+    <ol class="bn-grid" role="list" style="--bn-cols: {{ section.settings.columns }};">
+      {%- for block in section.blocks -%}
+        <li class="bn-card" {{ block.shopify_attributes }}>
+          {%- if section.settings.numbered -%}
+            <span class="bn-card__num">{{ forloop.index }}</span>
+          {%- elsif block.settings.icon != 'none' -%}
+            {% render 'bn-icon', name: block.settings.icon, class: 'bn-card__icon' %}
+          {%- endif -%}
+          <h3>{{ block.settings.title }}</h3>
+          {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ol>
+    {%- if section.settings.button_label != blank -%}
+      <div class="bn-after">
+        <a class="bn-btn{% if section.settings.style == 'plum' %} bn-btn--light{% endif %}" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Cards / steps",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anchor ID (for links like #bn-steps)" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Comment ça marche" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line" },
+    { "type": "richtext", "id": "text", "label": "Intro text" },
+    { "type": "checkbox", "id": "numbered", "label": "Show step numbers instead of icons", "default": false },
+    { "type": "range", "id": "columns", "label": "Columns on desktop", "min": 2, "max": 4, "step": 1, "default": 4 },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }, { "value": "plum", "label": "Plum" }
+    ] },
+    { "type": "checkbox", "id": "pattern", "label": "Moroccan arch pattern", "default": false }
+  ],
+  "blocks": [
+    { "type": "card", "name": "Card", "settings": [
+      { "type": "select", "id": "icon", "label": "Icon (when not numbered)", "default": "leaf", "options": [
+        { "value": "none", "label": "None" }, { "value": "leaf", "label": "Leaf" }, { "value": "rose", "label": "Rose" }, { "value": "steam", "label": "Steam" },
+        { "value": "heart", "label": "Heart" }, { "value": "moon", "label": "Moon" }, { "value": "clock", "label": "Clock" },
+        { "value": "drop", "label": "Drop" }, { "value": "sparkle", "label": "Sparkle" }, { "value": "shield", "label": "Shield" }, { "value": "box", "label": "Box" }
+      ] },
+      { "type": "text", "id": "title", "label": "Title", "default": "Titre" },
+      { "type": "textarea", "id": "text", "label": "Text" }
+    ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · Cards / steps",
+      "settings": { "anchor": "bn-steps", "eyebrow": "4 étapes simples", "heading": "Comment ça marche", "heading_ar": "كيفاش كتخدمي بيه", "numbered": true, "button_label": "Commencer mon rituel" },
+      "blocks": [
+        { "type": "card", "settings": { "title": "Préparez l'eau", "text": "Faites chauffer de l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante." } },
+        { "type": "card", "settings": { "title": "Ajoutez un sachet", "text": "Versez l'eau dans le bol du siège et ajoutez un sachet de plantes." } },
+        { "type": "card", "settings": { "title": "Testez la vapeur", "text": "Passez la main au-dessus du bol. La chaleur doit être douce et agréable." } },
+        { "type": "card", "settings": { "title": "Détendez-vous", "text": "Installez-vous 10 à 15 minutes. Arrêtez si c'est trop chaud." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

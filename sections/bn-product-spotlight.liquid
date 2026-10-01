@@ -1,0 +1,84 @@
+{%- liquid
+  assign product = section.settings.product
+  assign variant = product.selected_or_first_available_variant
+-%}
+<section class="bn-section bn-spot bn-section--{{ section.settings.style }}" id="bn-spot-{{ section.id }}">
+  <div class="bn-container bn-spot__grid">
+    <div class="bn-spot__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw' }}
+      {%- elsif product.featured_media -%}
+        {{ product.featured_media | image_url: width: 1400 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw' }}
+      {%- else -%}
+        {% render 'bn-icon', name: 'arch-rose', class: 'bn-placeholder' %}
+      {%- endif -%}
+    </div>
+    <div class="bn-spot__content">
+      {%- if section.settings.badge != blank -%}<span class="bn-badge">{{ section.settings.badge }}</span>{%- endif -%}
+      <h2 class="bn-title">{{ product.title | default: section.settings.fallback_title }}</h2>
+      {%- if section.settings.subtitle_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.subtitle_ar }}</span>{%- endif -%}
+
+      {%- if product != blank -%}
+        <div class="bn-price">
+          <span class="bn-price__now">{{ variant.price | money }}</span>
+          {%- if variant.compare_at_price > variant.price -%}
+            <span class="bn-price__was">{{ variant.compare_at_price | money }}</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <ul class="bn-check" role="list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if product != blank -%}
+        {%- form 'product', product, class: 'bn-spot__form' -%}
+          <input type="hidden" name="id" value="{{ variant.id }}">
+          <button type="submit" class="bn-btn bn-btn--block" {% unless variant.available %}disabled{% endunless %}>
+            {%- if variant.available -%}{{ section.settings.button_label }}{%- else -%}Bientôt de retour{%- endif -%}
+          </button>
+        {%- endform -%}
+        <p class="bn-reassure"><a href="{{ product.url }}" style="color: inherit;">Voir tous les détails →</a></p>
+      {%- elsif request.design_mode -%}
+        <p class="bn-editor-note">Choisissez le produit du rituel complet dans les réglages de cette section.</p>
+      {%- endif -%}
+      {%- if section.settings.reassure != blank -%}<p class="bn-reassure">{{ section.settings.reassure }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Product spotlight",
+  "settings": [
+    { "type": "product", "id": "product", "label": "Product" },
+    { "type": "image_picker", "id": "image", "label": "Custom image (optional)" },
+    { "type": "text", "id": "badge", "label": "Badge", "default": "Le plus choisi" },
+    { "type": "text", "id": "fallback_title", "label": "Title when no product is selected", "default": "Le Rituel Complet" },
+    { "type": "text", "id": "subtitle_ar", "label": "Arabic / Darija line", "default": "كلشي اللي خاصك باش تبداي" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Commander — paiement à la livraison" },
+    { "type": "text", "id": "reassure", "label": "Reassurance line", "default": "🚚 Livraison gratuite · 💵 Payez à la réception · 📦 Colis discret" },
+    { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "point", "name": "What's inside", "settings": [ { "type": "text", "id": "text", "label": "Text", "default": "1 siège de rituel" } ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · Product spotlight",
+      "blocks": [
+        { "type": "point", "settings": { "text": "1 siège de rituel stable et facile à ranger" } },
+        { "type": "point", "settings": { "text": "12 sachets de plantes séchées (1 sachet = 1 rituel)" } },
+        { "type": "point", "settings": { "text": "La carte du rituel avec les consignes de sécurité" } },
+        { "type": "point", "settings": { "text": "Livraison gratuite partout au Maroc" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

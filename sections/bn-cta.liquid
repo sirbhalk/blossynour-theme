@@ -1,0 +1,31 @@
+<section class="bn-section bn-cta bn-section--{{ section.settings.style }} bn-section--pattern">
+  <div class="bn-container--narrow bn-center">
+    {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2 class="bn-title">{{ section.settings.heading }}</h2>
+    {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+    {%- if section.settings.text != blank -%}<div class="bn-lead">{{ section.settings.text }}</div>{%- endif -%}
+    <div class="bn-cta__row">
+      {%- if section.settings.button_label != blank -%}
+        <a class="bn-btn{% if section.settings.style == 'plum' %} bn-btn--light{% endif %}" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Call to action",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Votre rendez-vous de la semaine" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Offrez-vous 15 minutes rien qu'à vous" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "نتي تستاهلي هاد اللحظة" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Livraison gratuite sur le rituel complet. Paiement à la livraison partout au Maroc.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Je commande mon rituel" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "style", "label": "Background", "default": "plum", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "plum", "label": "Plum" }
+    ] }
+  ],
+  "presets": [ { "name": "BN · Call to action" } ]
+}
+{% endschema %}

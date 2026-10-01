@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -465,10 +466,304 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "bn_p_trust": {
+      "type": "bn-trust",
+      "settings": {
+        "style": "white"
+      },
+      "blocks": {
+        "bn_p_trust_1": {
+          "type": "item",
+          "settings": {
+            "icon": "rose",
+            "title": "Plantes séchées",
+            "subtitle": "Rose, lavande, camomille"
+          }
+        },
+        "bn_p_trust_2": {
+          "type": "item",
+          "settings": {
+            "icon": "cash",
+            "title": "Paiement à la livraison",
+            "subtitle": "Partout au Maroc"
+          }
+        },
+        "bn_p_trust_3": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "title": "Emballage discret",
+            "subtitle": "Aucun nom sur le colis"
+          }
+        },
+        "bn_p_trust_4": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Remplacé si abîmé",
+            "subtitle": "Vérifiez à la livraison"
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_trust_1",
+        "bn_p_trust_2",
+        "bn_p_trust_3",
+        "bn_p_trust_4"
+      ]
+    },
+    "bn_p_steps": {
+      "type": "bn-cards",
+      "settings": {
+        "anchor": "bn-steps",
+        "eyebrow": "4 étapes simples",
+        "heading": "Comment ça marche",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "numbered": true,
+        "columns": 4,
+        "button_label": "",
+        "style": "blush",
+        "pattern": false
+      },
+      "blocks": {
+        "bn_p_steps_1": {
+          "type": "card",
+          "settings": {
+            "title": "Préparez l'eau",
+            "text": "Faites chauffer de l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
+            "icon": "drop"
+          }
+        },
+        "bn_p_steps_2": {
+          "type": "card",
+          "settings": {
+            "title": "Ajoutez un sachet",
+            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet de plantes.",
+            "icon": "leaf"
+          }
+        },
+        "bn_p_steps_3": {
+          "type": "card",
+          "settings": {
+            "title": "Testez la vapeur",
+            "text": "Passez la main au-dessus du bol. La chaleur doit être douce et agréable.",
+            "icon": "steam"
+          }
+        },
+        "bn_p_steps_4": {
+          "type": "card",
+          "settings": {
+            "title": "Détendez-vous",
+            "text": "Installez-vous 10 à 15 minutes. Arrêtez si c'est trop chaud.",
+            "icon": "clock"
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_steps_1",
+        "bn_p_steps_2",
+        "bn_p_steps_3",
+        "bn_p_steps_4"
+      ]
+    },
+    "bn_p_story": {
+      "type": "bn-story",
+      "settings": {
+        "eyebrow": "Inspiré de nos grands-mères",
+        "heading": "Le hammam marocain, en version douce",
+        "heading_ar": "لحظة ديالك، بالعشوب البلدية",
+        "text": "<p>Chez nous, le hammam a toujours été un moment pour soi. Blossy Nour l'apporte dans votre salle de bain : de l'eau chaude, des plantes séchées et 15 minutes de calme.</p>",
+        "style": "white",
+        "reverse": false
+      },
+      "blocks": {
+        "bn_p_story_1": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Rose",
+            "text": "Un parfum floral et doux",
+            "latin": "Rosa damascena"
+          }
+        },
+        "bn_p_story_2": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Lavande",
+            "text": "Une odeur apaisante",
+            "latin": "Lavandula angustifolia"
+          }
+        },
+        "bn_p_story_3": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Camomille",
+            "text": "Une note douce et chaleureuse",
+            "latin": "Matricaria chamomilla"
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_story_1",
+        "bn_p_story_2",
+        "bn_p_story_3"
+      ]
+    },
+    "bn_p_benefits": {
+      "type": "bn-cards",
+      "settings": {
+        "eyebrow": "Pourquoi elles l'adorent",
+        "heading": "Un moment rien qu'à vous",
+        "heading_ar": "وقتك، راحتك",
+        "numbered": false,
+        "columns": 4,
+        "style": "cream",
+        "pattern": true
+      },
+      "blocks": {
+        "bn_p_benefits_1": {
+          "type": "card",
+          "settings": {
+            "icon": "moon",
+            "title": "Détente",
+            "text": "Une pause chaude et calme à la fin de la journée."
+          }
+        },
+        "bn_p_benefits_2": {
+          "type": "card",
+          "settings": {
+            "icon": "rose",
+            "title": "Parfum doux",
+            "text": "Rose, lavande et camomille dans la vapeur."
+          }
+        },
+        "bn_p_benefits_3": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "title": "Self-care",
+            "text": "Votre rendez-vous de la semaine avec vous-même."
+          }
+        },
+        "bn_p_benefits_4": {
+          "type": "card",
+          "settings": {
+            "icon": "sparkle",
+            "title": "Simple",
+            "text": "De l'eau chaude, un sachet, 15 minutes."
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_benefits_1",
+        "bn_p_benefits_2",
+        "bn_p_benefits_3",
+        "bn_p_benefits_4"
+      ]
+    },
+    "bn_p_reviews": {
+      "type": "bn-reviews",
+      "settings": {
+        "eyebrow": "Elles en parlent",
+        "heading": "Leur petit moment à elles",
+        "heading_ar": "شنو قالو البنات",
+        "style": "blush"
+      }
+    },
+    "bn_p_faq": {
+      "type": "bn-faq",
+      "settings": {
+        "eyebrow": "Vos questions",
+        "heading": "Questions fréquentes",
+        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
+        "open_first": true,
+        "style": "cream"
+      },
+      "blocks": {
+        "bn_p_faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "C'est quoi exactement ?",
+            "answer": "<p>Un rituel bien-être à la maison, inspiré du hammam : de l'eau chaude, un sachet de plantes séchées et un siège pour vous installer 10 à 15 minutes. C'est un moment de détente, pas un traitement.</p>"
+          }
+        },
+        "bn_p_faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "À quelle fréquence l'utiliser ?",
+            "answer": "<p>Une à deux fois par semaine, quand vous avez envie d'un moment pour vous. Écoutez votre corps.</p>"
+          }
+        },
+        "bn_p_faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "Est-ce que ça se boit ?",
+            "answer": "<p>Non. Les plantes sont uniquement pour la vapeur. Ne pas boire, ne pas manger.</p>"
+          }
+        },
+        "bn_p_faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "Je peux l'utiliser pendant mes règles ou si je suis enceinte ?",
+            "answer": "<p>Non. Pas pendant les règles, la grossesse, l'allaitement, ni après un accouchement ou une opération sans l'avis de votre médecin.</p>"
+          }
+        },
+        "bn_p_faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "J'ai une odeur inhabituelle ou des pertes, ça va m'aider ?",
+            "answer": "<p>Ce produit ne soigne rien. Une odeur inhabituelle, des pertes, une démangeaison ou une douleur doivent être vues par un médecin ou une sage-femme.</p>"
+          }
+        },
+        "bn_p_faq_6": {
+          "type": "question",
+          "settings": {
+            "question": "Comment je paie ?",
+            "answer": "<p>À la livraison, en espèces. Vous pouvez vérifier le colis devant le livreur. Si un article arrive abîmé, on le remplace.</p>"
+          }
+        },
+        "bn_p_faq_7": {
+          "type": "question",
+          "settings": {
+            "question": "Le colis est-il discret ?",
+            "answer": "<p>Oui. Le carton extérieur ne porte aucun nom de produit.</p>"
+          }
+        },
+        "bn_p_faq_8": {
+          "type": "question",
+          "settings": {
+            "question": "Combien de temps pour la livraison ?",
+            "answer": "<p>Le délai dépend de votre ville. Nous vous appelons ou vous écrivons sur WhatsApp pour confirmer la commande avant l'envoi.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_faq_1",
+        "bn_p_faq_2",
+        "bn_p_faq_3",
+        "bn_p_faq_4",
+        "bn_p_faq_5",
+        "bn_p_faq_6",
+        "bn_p_faq_7",
+        "bn_p_faq_8"
+      ]
+    },
+    "bn_p_safety": {
+      "type": "bn-safety",
+      "settings": {
+        "style": "white"
+      }
     }
   },
   "order": [
     "main",
+    "bn_p_trust",
+    "bn_p_steps",
+    "bn_p_story",
+    "bn_p_benefits",
+    "bn_p_reviews",
+    "bn_p_faq",
+    "bn_p_safety",
     "product_recommendations_qggXJq"
   ]
 }

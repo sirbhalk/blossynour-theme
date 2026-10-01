@@ -1,0 +1,68 @@
+<section class="bn-section bn-faq-section bn-section--{{ section.settings.style }}" id="faq">
+  <div class="bn-container--narrow">
+    <div class="bn-center">
+      {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="bn-title">{{ section.settings.heading }}</h2>
+      {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+      <div class="bn-divider"><span></span></div>
+    </div>
+    <div class="bn-faq">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }}{% if forloop.first and section.settings.open_first %} open{% endif %}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="bn-faq__answer">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{%- if section.blocks.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in section.blocks -%}
+    { "@type": "Question", "name": {{ block.settings.question | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | json }} } }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "BN · FAQ",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Vos questions" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Questions fréquentes" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "الأسئلة اللي كتطرحو بزاف" },
+    { "type": "checkbox", "id": "open_first", "label": "Open first question", "default": true },
+    { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "question", "name": "Question", "settings": [
+      { "type": "text", "id": "question", "label": "Question", "default": "Question" },
+      { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Réponse</p>" }
+    ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · FAQ",
+      "blocks": [
+        { "type": "question", "settings": { "question": "C'est quoi exactement ?", "answer": "<p>Un rituel bien-être à la maison, inspiré du hammam : de l'eau chaude, un sachet de plantes séchées et un siège pour vous installer 10 à 15 minutes. C'est un moment de détente, pas un traitement.</p>" } },
+        { "type": "question", "settings": { "question": "À quelle fréquence l'utiliser ?", "answer": "<p>Une à deux fois par semaine, quand vous avez envie d'un moment pour vous. Écoutez votre corps.</p>" } },
+        { "type": "question", "settings": { "question": "Est-ce que ça se boit ?", "answer": "<p>Non. Les plantes sont uniquement pour la vapeur. Ne pas boire, ne pas manger.</p>" } },
+        { "type": "question", "settings": { "question": "Je peux l'utiliser pendant mes règles ou si je suis enceinte ?", "answer": "<p>Non. Pas pendant les règles, la grossesse, l'allaitement, ni après un accouchement ou une opération sans l'avis de votre médecin.</p>" } },
+        { "type": "question", "settings": { "question": "J'ai une odeur inhabituelle ou des pertes, ça va m'aider ?", "answer": "<p>Ce produit ne soigne rien. Une odeur inhabituelle, des pertes, une démangeaison ou une douleur doivent être vues par un médecin ou une sage-femme.</p>" } },
+        { "type": "question", "settings": { "question": "Comment je paie ?", "answer": "<p>À la livraison, en espèces. Vous pouvez vérifier le colis devant le livreur. Si un article arrive abîmé, on le remplace.</p>" } },
+        { "type": "question", "settings": { "question": "Le colis est-il discret ?", "answer": "<p>Oui. Le carton extérieur ne porte aucun nom de produit.</p>" } },
+        { "type": "question", "settings": { "question": "Combien de temps pour la livraison ?", "answer": "<p>Le délai dépend de votre ville. Nous vous appelons ou vous écrivons sur WhatsApp pour confirmer la commande avant l'envoi.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

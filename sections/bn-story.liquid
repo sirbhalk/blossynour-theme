@@ -1,0 +1,66 @@
+<section class="bn-section bn-story bn-section--{{ section.settings.style }}">
+  <div class="bn-container bn-split{% if section.settings.reverse %} bn-split--reverse{% endif %}">
+    <div class="bn-split__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw' }}
+      {%- else -%}
+        {% render 'bn-icon', name: 'rose', class: 'bn-placeholder' %}
+      {%- endif -%}
+    </div>
+    <div class="bn-split__content">
+      {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="bn-title">{{ section.settings.heading }}</h2>
+      {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+      {%- if section.settings.text != blank -%}<div class="bn-lead">{{ section.settings.text }}</div>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <ul class="bn-ingredients" role="list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>
+              <strong>{{ block.settings.name }}</strong>
+              <span>{{ block.settings.text }}{% if block.settings.latin != blank %} <em>· {{ block.settings.latin }}</em>{% endif %}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a class="bn-btn{% if section.settings.style == 'plum' %} bn-btn--light{% endif %}" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Story / ingredients",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image (portrait)" },
+    { "type": "checkbox", "id": "reverse", "label": "Image on the right", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Inspiré de nos grands-mères" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Le hammam marocain, en version douce" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "لحظة ديالك، بالعشوب البلدية" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Chez nous, le hammam a toujours été un moment pour soi. Blossy Nour l'apporte dans votre salle de bain : de l'eau chaude, des plantes séchées et 15 minutes de calme.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "select", "id": "style", "label": "Background", "default": "white", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }, { "value": "plum", "label": "Plum" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "ingredient", "name": "Ingredient", "settings": [
+      { "type": "text", "id": "name", "label": "Name", "default": "Rose" },
+      { "type": "text", "id": "text", "label": "Short description", "default": "Un parfum floral et doux" },
+      { "type": "text", "id": "latin", "label": "Latin name (optional)" }
+    ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · Story / ingredients",
+      "blocks": [
+        { "type": "ingredient", "settings": { "name": "Rose", "text": "Un parfum floral et doux", "latin": "Rosa damascena" } },
+        { "type": "ingredient", "settings": { "name": "Lavande", "text": "Une odeur apaisante", "latin": "Lavandula angustifolia" } },
+        { "type": "ingredient", "settings": { "name": "Camomille", "text": "Une note douce et chaleureuse", "latin": "Matricaria chamomilla" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

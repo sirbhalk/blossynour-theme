@@ -6,280 +6,398 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
+    "bn_hero": {
+      "type": "bn-hero",
+      "settings": {
+        "eyebrow": "Rituel de vapeur aux plantes",
+        "heading": "Votre petit hammam, chez vous",
+        "heading_ar": "حمام صغير فدارك",
+        "text": "<p>15 minutes de chaleur douce et de parfums de rose, rien que pour vous. Un rituel bien-être inspiré du hammam marocain.</p>",
+        "button_label": "Commencer mon rituel",
+        "button2_label": "Comment ça marche",
+        "button2_link": "#bn-steps"
+      },
       "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
+        "bn_hero_1": {
+          "type": "chip",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "text_color": "{{ settings.color_palette.background }}",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "🌹 Plantes séchées"
+          }
         },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
+        "bn_hero_2": {
+          "type": "chip",
           "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "rgba(0,0,0,0)",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
+            "text": "💵 Paiement à la livraison"
+          }
+        },
+        "bn_hero_3": {
+          "type": "chip",
+          "settings": {
+            "text": "📦 Emballage discret"
+          }
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
-      "name": "t:names.hero",
-      "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "background_color": "rgba(0,0,0,0)",
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
-      }
+        "bn_hero_1",
+        "bn_hero_2",
+        "bn_hero_3"
+      ]
     },
-    "product_list_fa6P9H": {
-      "type": "product-list",
+    "bn_trust": {
+      "type": "bn-trust",
+      "settings": {
+        "style": "white"
+      },
       "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "t:names.header",
-          "static": true,
+        "bn_trust_1": {
+          "type": "item",
           "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": false,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_list_text_YFtzcL": {
-              "type": "_product-list-text",
-              "name": "t:names.collection_title",
-              "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_list_button_MWeP9V": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
-          ]
+            "icon": "rose",
+            "title": "Plantes séchées",
+            "subtitle": "Rose, lavande, camomille"
+          }
         },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
-          "static": true,
+        "bn_trust_2": {
+          "type": "item",
           "settings": {
-            "product_card_gap": 4,
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery_677WP3": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
-              "settings": {
-                "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title_YXxMTj": {
-              "type": "product-title",
-              "name": "t:names.product_title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "price_JQzVV4": {
-              "type": "price",
-              "name": "t:names.product_price",
-              "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
-                "width": "100%",
-                "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
-          ]
+            "icon": "cash",
+            "title": "Paiement à la livraison",
+            "subtitle": "Partout au Maroc"
+          }
+        },
+        "bn_trust_3": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "title": "Emballage discret",
+            "subtitle": "Aucun nom sur le colis"
+          }
+        },
+        "bn_trust_4": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Remplacé si abîmé",
+            "subtitle": "Vérifiez à la livraison"
+          }
         }
       },
-      "name": "t:names.product_list",
+      "block_order": [
+        "bn_trust_1",
+        "bn_trust_2",
+        "bn_trust_3",
+        "bn_trust_4"
+      ]
+    },
+    "bn_spotlight": {
+      "type": "bn-product-spotlight",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 8,
+        "badge": "Le plus choisi",
+        "fallback_title": "Le Rituel Complet",
+        "subtitle_ar": "كلشي اللي خاصك باش تبداي",
+        "button_label": "Commander — paiement à la livraison",
+        "reassure": "🚚 Livraison gratuite · 💵 Payez à la réception · 📦 Colis discret",
+        "style": "cream"
+      },
+      "blocks": {
+        "bn_spotlight_1": {
+          "type": "point",
+          "settings": {
+            "text": "1 siège de rituel stable et facile à ranger"
+          }
+        },
+        "bn_spotlight_2": {
+          "type": "point",
+          "settings": {
+            "text": "12 sachets de plantes séchées (1 sachet = 1 rituel)"
+          }
+        },
+        "bn_spotlight_3": {
+          "type": "point",
+          "settings": {
+            "text": "La carte du rituel avec les consignes de sécurité"
+          }
+        },
+        "bn_spotlight_4": {
+          "type": "point",
+          "settings": {
+            "text": "Livraison gratuite partout au Maroc"
+          }
+        }
+      },
+      "block_order": [
+        "bn_spotlight_1",
+        "bn_spotlight_2",
+        "bn_spotlight_3",
+        "bn_spotlight_4"
+      ]
+    },
+    "bn_steps": {
+      "type": "bn-cards",
+      "settings": {
+        "anchor": "bn-steps",
+        "eyebrow": "4 étapes simples",
+        "heading": "Comment ça marche",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "numbered": true,
         "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 28,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "button_label": "Commencer mon rituel",
+        "style": "blush",
+        "pattern": false
+      },
+      "blocks": {
+        "bn_steps_1": {
+          "type": "card",
+          "settings": {
+            "title": "Préparez l'eau",
+            "text": "Faites chauffer de l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
+            "icon": "drop"
+          }
+        },
+        "bn_steps_2": {
+          "type": "card",
+          "settings": {
+            "title": "Ajoutez un sachet",
+            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet de plantes.",
+            "icon": "leaf"
+          }
+        },
+        "bn_steps_3": {
+          "type": "card",
+          "settings": {
+            "title": "Testez la vapeur",
+            "text": "Passez la main au-dessus du bol. La chaleur doit être douce et agréable.",
+            "icon": "steam"
+          }
+        },
+        "bn_steps_4": {
+          "type": "card",
+          "settings": {
+            "title": "Détendez-vous",
+            "text": "Installez-vous 10 à 15 minutes. Arrêtez si c'est trop chaud.",
+            "icon": "clock"
+          }
+        }
+      },
+      "block_order": [
+        "bn_steps_1",
+        "bn_steps_2",
+        "bn_steps_3",
+        "bn_steps_4"
+      ]
+    },
+    "bn_story": {
+      "type": "bn-story",
+      "settings": {
+        "eyebrow": "Inspiré de nos grands-mères",
+        "heading": "Le hammam marocain, en version douce",
+        "heading_ar": "لحظة ديالك، بالعشوب البلدية",
+        "text": "<p>Chez nous, le hammam a toujours été un moment pour soi. Blossy Nour l'apporte dans votre salle de bain : de l'eau chaude, des plantes séchées et 15 minutes de calme.</p>",
+        "style": "white",
+        "reverse": false
+      },
+      "blocks": {
+        "bn_story_1": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Rose",
+            "text": "Un parfum floral et doux",
+            "latin": "Rosa damascena"
+          }
+        },
+        "bn_story_2": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Lavande",
+            "text": "Une odeur apaisante",
+            "latin": "Lavandula angustifolia"
+          }
+        },
+        "bn_story_3": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Camomille",
+            "text": "Une note douce et chaleureuse",
+            "latin": "Matricaria chamomilla"
+          }
+        }
+      },
+      "block_order": [
+        "bn_story_1",
+        "bn_story_2",
+        "bn_story_3"
+      ]
+    },
+    "bn_benefits": {
+      "type": "bn-cards",
+      "settings": {
+        "eyebrow": "Pourquoi elles l'adorent",
+        "heading": "Un moment rien qu'à vous",
+        "heading_ar": "وقتك، راحتك",
+        "numbered": false,
+        "columns": 4,
+        "style": "cream",
+        "pattern": true
+      },
+      "blocks": {
+        "bn_benefits_1": {
+          "type": "card",
+          "settings": {
+            "icon": "moon",
+            "title": "Détente",
+            "text": "Une pause chaude et calme à la fin de la journée."
+          }
+        },
+        "bn_benefits_2": {
+          "type": "card",
+          "settings": {
+            "icon": "rose",
+            "title": "Parfum doux",
+            "text": "Rose, lavande et camomille dans la vapeur."
+          }
+        },
+        "bn_benefits_3": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "title": "Self-care",
+            "text": "Votre rendez-vous de la semaine avec vous-même."
+          }
+        },
+        "bn_benefits_4": {
+          "type": "card",
+          "settings": {
+            "icon": "sparkle",
+            "title": "Simple",
+            "text": "De l'eau chaude, un sachet, 15 minutes."
+          }
+        }
+      },
+      "block_order": [
+        "bn_benefits_1",
+        "bn_benefits_2",
+        "bn_benefits_3",
+        "bn_benefits_4"
+      ]
+    },
+    "bn_reviews": {
+      "type": "bn-reviews",
+      "settings": {
+        "eyebrow": "Elles en parlent",
+        "heading": "Leur petit moment à elles",
+        "heading_ar": "شنو قالو البنات",
+        "style": "blush"
+      }
+    },
+    "bn_faq": {
+      "type": "bn-faq",
+      "settings": {
+        "eyebrow": "Vos questions",
+        "heading": "Questions fréquentes",
+        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
+        "open_first": true,
+        "style": "cream"
+      },
+      "blocks": {
+        "bn_faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "C'est quoi exactement ?",
+            "answer": "<p>Un rituel bien-être à la maison, inspiré du hammam : de l'eau chaude, un sachet de plantes séchées et un siège pour vous installer 10 à 15 minutes. C'est un moment de détente, pas un traitement.</p>"
+          }
+        },
+        "bn_faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "À quelle fréquence l'utiliser ?",
+            "answer": "<p>Une à deux fois par semaine, quand vous avez envie d'un moment pour vous. Écoutez votre corps.</p>"
+          }
+        },
+        "bn_faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "Est-ce que ça se boit ?",
+            "answer": "<p>Non. Les plantes sont uniquement pour la vapeur. Ne pas boire, ne pas manger.</p>"
+          }
+        },
+        "bn_faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "Je peux l'utiliser pendant mes règles ou si je suis enceinte ?",
+            "answer": "<p>Non. Pas pendant les règles, la grossesse, l'allaitement, ni après un accouchement ou une opération sans l'avis de votre médecin.</p>"
+          }
+        },
+        "bn_faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "J'ai une odeur inhabituelle ou des pertes, ça va m'aider ?",
+            "answer": "<p>Ce produit ne soigne rien. Une odeur inhabituelle, des pertes, une démangeaison ou une douleur doivent être vues par un médecin ou une sage-femme.</p>"
+          }
+        },
+        "bn_faq_6": {
+          "type": "question",
+          "settings": {
+            "question": "Comment je paie ?",
+            "answer": "<p>À la livraison, en espèces. Vous pouvez vérifier le colis devant le livreur. Si un article arrive abîmé, on le remplace.</p>"
+          }
+        },
+        "bn_faq_7": {
+          "type": "question",
+          "settings": {
+            "question": "Le colis est-il discret ?",
+            "answer": "<p>Oui. Le carton extérieur ne porte aucun nom de produit.</p>"
+          }
+        },
+        "bn_faq_8": {
+          "type": "question",
+          "settings": {
+            "question": "Combien de temps pour la livraison ?",
+            "answer": "<p>Le délai dépend de votre ville. Nous vous appelons ou vous écrivons sur WhatsApp pour confirmer la commande avant l'envoi.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bn_faq_1",
+        "bn_faq_2",
+        "bn_faq_3",
+        "bn_faq_4",
+        "bn_faq_5",
+        "bn_faq_6",
+        "bn_faq_7",
+        "bn_faq_8"
+      ]
+    },
+    "bn_safety": {
+      "type": "bn-safety",
+      "settings": {
+        "style": "white"
+      }
+    },
+    "bn_cta": {
+      "type": "bn-cta",
+      "settings": {
+        "eyebrow": "Votre rendez-vous de la semaine",
+        "heading": "Offrez-vous 15 minutes rien qu'à vous",
+        "heading_ar": "نتي تستاهلي هاد اللحظة",
+        "text": "<p>Livraison gratuite sur le rituel complet. Paiement à la livraison partout au Maroc.</p>",
+        "button_label": "Je commande mon rituel",
+        "style": "plum"
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "bn_hero",
+    "bn_trust",
+    "bn_spotlight",
+    "bn_steps",
+    "bn_story",
+    "bn_benefits",
+    "bn_reviews",
+    "bn_faq",
+    "bn_safety",
+    "bn_cta"
   ]
 }

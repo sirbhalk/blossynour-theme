@@ -190,10 +190,19 @@
         "padding-block-start": 20,
         "padding-block-end": 48
       }
+    },
+    "bn_whatsapp": {
+      "type": "bn-whatsapp",
+      "settings": {
+        "phone": "",
+        "label": "Commander sur WhatsApp",
+        "message": "Salam 🌹 Je veux commander le rituel Blossy Nour"
+      }
     }
   },
   "order": [
     "footer_m9NzUG",
-    "footer_utilities_jLGE8U"
+    "footer_utilities_jLGE8U",
+    "bn_whatsapp"
   ]
 }
