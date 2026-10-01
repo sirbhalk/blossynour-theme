@@ -140,9 +140,24 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "bn_footer_menu": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "heading": "Informations",
+            "menu_spacing": 12,
+            "show_as_accordion": true,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "heading_preset": "h5",
+            "link_preset": "paragraph"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
+        "bn_footer_menu",
         "group_H6VpwJ",
         "email_signup_crihX7"
       ],
