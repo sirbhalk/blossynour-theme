@@ -39,10 +39,10 @@
         {%- form 'product', product, class: 'bn-spot__form' -%}
           <input type="hidden" name="id" value="{{ variant.id }}">
           <button type="submit" class="bn-btn bn-btn--block" {% unless variant.available %}disabled{% endunless %}>
-            {%- if variant.available -%}{{ section.settings.button_label }}{%- else -%}Bientôt de retour{%- endif -%}
+            {%- if variant.available -%}{{ section.settings.button_label }}{%- else -%}{{ 'bn.back_soon' | t }}{%- endif -%}
           </button>
         {%- endform -%}
-        <p class="bn-reassure"><a href="{{ product.url }}" style="color: inherit;">Voir tous les détails →</a></p>
+        <p class="bn-reassure"><a href="{{ product.url }}" style="color: inherit;">{{ 'bn.see_details' | t }}</a></p>
       {%- elsif request.design_mode -%}
         <p class="bn-editor-note">Choisissez le produit du rituel complet dans les réglages de cette section.</p>
       {%- endif -%}

@@ -8,6 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "bn": {
+    "add_to_cart": "Ajouter au panier",
+    "sold_out": "Épuisé",
+    "back_soon": "Bientôt de retour",
+    "see_details": "Voir tous les détails →",
+    "sale": "Promo",
+    "stars": "{{ rating }} sur 5",
+    "customer_message": "Message de cliente"
+  },
   "blocks": {
     "load_video": "Charger la vidéo : {{ description }}",
     "sold_out": "Épuisé",

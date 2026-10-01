@@ -20,7 +20,7 @@
           {%- assign v = product.selected_or_first_available_variant -%}
           <li class="bn-pcard">
             <a class="bn-pcard__media" href="{{ product.url }}">
-              {%- if product.compare_at_price > product.price -%}<span class="bn-pcard__badge">Promo</span>{%- endif -%}
+              {%- if product.compare_at_price > product.price -%}<span class="bn-pcard__badge">{{ 'bn.sale' | t }}</span>{%- endif -%}
               {%- if product.featured_media -%}
                 {{ product.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 33vw, (min-width: 481px) 50vw, 100vw', class: 'bn-pcard__img' }}
                 {%- if product.media.size > 1 -%}
@@ -39,7 +39,7 @@
               {%- form 'product', product -%}
                 <input type="hidden" name="id" value="{{ v.id }}">
                 <button type="submit" class="bn-btn bn-btn--block" {% unless v.available %}disabled{% endunless %}>
-                  {%- if v.available -%}Ajouter au panier{%- else -%}Épuisé{%- endif -%}
+                  {%- if v.available -%}{{ 'bn.add_to_cart' | t }}{%- else -%}{{ 'bn.sold_out' | t }}{%- endif -%}
                 </button>
               {%- endform -%}
             </div>

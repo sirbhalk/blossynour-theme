@@ -173,7 +173,7 @@
 }
 .bn-hero__content { max-width: 560px; }
 .bn-hero .bn-title { font-size: clamp(2.4rem, 6vw, 4.2rem); }
-.bn-hero .bn-lead { margin-left: 0; }
+.bn-hero .bn-lead { margin-inline-start: 0; }
 .bn-hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .bn-hero__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; list-style: none; padding: 0; }
 .bn-chip {
@@ -219,7 +219,7 @@
   padding: 0;
   max-width: 1160px;
 }
-.bn-trust__item { display: flex; align-items: center; gap: 12px; justify-content: center; text-align: left; }
+.bn-trust__item { display: flex; align-items: center; gap: 12px; justify-content: center; text-align: start; }
 .bn-trust__icon { flex: 0 0 auto; width: 40px; height: 40px; color: var(--bn-terracotta); }
 .bn-trust__label { font-size: 0.88rem; line-height: 1.35; font-weight: 500; }
 .bn-trust__sub { display: block; font-weight: 400; font-size: 0.78rem; color: var(--bn-muted); }
@@ -316,7 +316,7 @@
 }
 .bn-split__media img { width: 100%; height: 100%; object-fit: cover; }
 .bn-split__media .bn-placeholder { width: 45%; color: var(--bn-plum); opacity: 0.4; }
-.bn-split .bn-lead { margin-left: 0; }
+.bn-split .bn-lead { margin-inline-start: 0; }
 .bn-ingredients { display: grid; gap: 14px; margin: 0 0 28px; padding: 0; list-style: none; }
 .bn-ingredients li { display: flex; gap: 14px; align-items: baseline; border-bottom: 1px solid rgba(201, 168, 106, 0.35); padding-bottom: 12px; }
 .bn-ingredients strong { font-family: var(--bn-heading); font-weight: 400; font-size: 1.15rem; min-width: 140px; }
@@ -369,7 +369,8 @@
 .bn-faq summary {
   list-style: none;
   cursor: pointer;
-  padding: 20px 32px 20px 0;
+  padding-block: 20px;
+  padding-inline: 0 32px;
   font-weight: 500;
   position: relative;
 }
@@ -377,7 +378,7 @@
 .bn-faq summary::after {
   content: '+';
   position: absolute;
-  right: 0;
+  inset-inline-end: 0;
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.4rem;
@@ -399,13 +400,13 @@
 .bn-safety__head { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; }
 .bn-safety__head svg { width: 34px; height: 34px; color: var(--bn-terracotta); flex: 0 0 auto; }
 .bn-safety__head h2 { font-family: var(--bn-heading); font-weight: 400; font-size: 1.6rem; margin: 0; }
-.bn-safety ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; line-height: 1.6; font-size: 0.93rem; }
+.bn-safety ul { margin: 0; padding-inline-start: 20px; display: grid; gap: 8px; line-height: 1.6; font-size: 0.93rem; }
 .bn-safety__note { margin: 18px 0 0; font-size: 0.85rem; color: var(--bn-plum-soft); font-style: italic; }
 
 /* ---------- whatsapp ---------- */
 .bn-wa {
   position: fixed;
-  right: 16px;
+  inset-inline-end: 16px;
   bottom: 16px;
   z-index: 40;
   display: inline-flex;
@@ -435,7 +436,7 @@
 @media (max-width: 749px) {
   .bn-hero__inner { grid-template-columns: 1fr; text-align: center; padding-top: 48px; padding-bottom: 48px; }
   .bn-hero__content { margin: 0 auto; }
-  .bn-hero .bn-lead { margin-left: auto; }
+  .bn-hero .bn-lead { margin-inline-start: auto; }
   .bn-hero__ctas, .bn-hero__chips { justify-content: center; }
   .bn-hero__arch { width: min(78%, 300px); order: -1; }
   .bn-hero__media::after { background: rgba(251, 245, 238, 0.82); }
@@ -499,11 +500,11 @@
 .bn-pcard__img--alt { opacity: 0; }
 .bn-pcard:hover .bn-pcard__img--alt { opacity: 1; }
 .bn-pcard__media .bn-placeholder { width: 45%; }
-.bn-pcard__badge { position: absolute; top: 12px; left: 12px; z-index: 1; background: var(--bn-terracotta); color: var(--bn-cream); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
+.bn-pcard__badge { position: absolute; top: 12px; inset-inline-start: 12px; z-index: 1; background: var(--bn-terracotta); color: var(--bn-cream); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
 .bn-pcard__body { padding: 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; text-align: center; }
 .bn-pcard__title { font-family: var(--bn-heading); font-size: 1.15rem; color: var(--bn-plum); text-decoration: none; }
 .bn-pcard__price { margin: 0 0 6px; color: var(--bn-plum); font-weight: 500; }
-.bn-pcard__price s { color: var(--bn-plum-soft); font-weight: 400; margin-left: 6px; }
+.bn-pcard__price s { color: var(--bn-plum-soft); font-weight: 400; margin-inline-start: 6px; }
 .bn-pcard form { margin-top: auto; }
 
 /* product info blocks */
@@ -517,7 +518,7 @@
 .bn-badges__icon { width: 32px; height: 32px; color: var(--bn-terracotta); }
 
 /* sticky mobile cta */
-.bn-sticky { position: fixed; left: 12px; right: 84px; bottom: 16px; z-index: 39; transform: translateY(140%); transition: transform 0.25s ease; }
+.bn-sticky { position: fixed; inset-inline: 12px 84px; bottom: 16px; z-index: 39; transform: translateY(140%); transition: transform 0.25s ease; }
 .bn-sticky.is-visible { transform: none; }
 .bn-sticky .bn-btn { box-shadow: 0 8px 24px rgba(74, 42, 58, 0.25); }
 @media (min-width: 750px) { .bn-sticky { display: none; } }
@@ -573,3 +574,13 @@
   .bn-ann__item { grid-area: 1 / 1; opacity: 0; transition: opacity 0.4s ease; pointer-events: none; justify-content: center; }
   .bn-ann__item.is-active { opacity: 1; pointer-events: auto; }
 }
+
+/* ---------- Arabic / RTL ---------- */
+html[dir="rtl"] { --bn-heading: 'Noto Naskh Arabic', var(--font-heading--family), serif; --bn-body: 'Noto Naskh Arabic', var(--font-body--family), sans-serif; }
+html[dir="rtl"] body { font-family: 'Noto Naskh Arabic', var(--font-body--family), sans-serif; }
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3 { font-family: 'Noto Naskh Arabic', var(--font-heading--family), serif; }
+html[dir="rtl"] .bn-eyebrow, html[dir="rtl"] .bn-benefits__title { letter-spacing: 0; text-transform: none; }
+html[dir="rtl"] .bn-title { line-height: 1.35; }
+html[dir="rtl"] .bn-hero__media::after { background: linear-gradient(270deg, rgba(251, 245, 238, 0.95) 0%, rgba(251, 245, 238, 0.75) 45%, rgba(251, 245, 238, 0) 80%); }
+/* the Darija line repeats the heading on the Arabic version */
+html[lang="ar"] .bn-ar { display: none; }

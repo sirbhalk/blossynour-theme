@@ -8,6 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "bn": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "back_soon": "Back soon",
+    "see_details": "See all details →",
+    "sale": "Sale",
+    "stars": "{{ rating }} out of 5",
+    "customer_message": "Customer message"
+  },
   "accessibility": {
     "account": "Account",
     "active_filters": "Active filters:",
