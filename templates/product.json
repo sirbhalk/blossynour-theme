@@ -39,6 +39,7 @@
             "media_columns": "two",
             "image_gap": 4,
             "large_first_image": false,
+            "icons_style": "arrow",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
@@ -117,6 +118,7 @@
                 "border_opacity": 100,
                 "border_color": "",
                 "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
@@ -157,7 +159,7 @@
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
-                    "type_preset": "paragraph",
+                    "type_preset": "h4",
                     "width": "100%",
                     "alignment": "left",
                     "font": "var(--font-body--family)",
@@ -178,6 +180,18 @@
                 "text_xrnftG",
                 "price_tVjtKg"
               ]
+            },
+            "bn_promo": {
+              "type": "bn-promo",
+              "settings": {
+                "promo_icon": "truck",
+                "promo": "Free delivery on this set",
+                "tagline_icon": "rose",
+                "tagline": "Your little hammam moment, at home",
+                "tagline_ar": "حمام صغير فدارك",
+                "checklist": "1 sturdy ritual seat\n12 dried herb sachets\nThe ritual card with safety instructions\nCash on delivery across Morocco"
+              },
+              "blocks": {}
             },
             "divider_VJhene": {
               "type": "_divider",
@@ -274,6 +288,18 @@
               },
               "block_order": []
             },
+            "bn_badges": {
+              "type": "bn-trust-badges",
+              "settings": {
+                "icon_1": "leaf",
+                "label_1": "Dried herbs",
+                "icon_2": "cash",
+                "label_2": "Cash on delivery",
+                "icon_3": "box",
+                "label_3": "Discreet parcel"
+              },
+              "blocks": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "t:names.product_description",
@@ -299,28 +325,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "bn_promo": {
-              "type": "bn-promo",
-              "settings": {
-                "promo": "Free delivery on this set",
-                "tagline": "Your little hammam moment, at home",
-                "tagline_ar": "حمام صغير فدارك",
-                "checklist": "1 sturdy ritual seat\n12 dried herb sachets\nThe ritual card with safety instructions\nCash on delivery across Morocco",
-                "promo_icon": "truck",
-                "tagline_icon": "rose"
-              }
-            },
-            "bn_badges": {
-              "type": "bn-trust-badges",
-              "settings": {
-                "icon_1": "leaf",
-                "label_1": "Dried herbs",
-                "icon_2": "cash",
-                "label_2": "Cash on delivery",
-                "icon_3": "box",
-                "label_3": "Discreet parcel"
-              }
             }
           },
           "block_order": [
@@ -347,6 +351,257 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "bn_p_ugc": {
+      "type": "bn-ugc-videos",
+      "settings": {
+        "eyebrow": "For real",
+        "heading": "They tried the ritual",
+        "heading_ar": "شوفي التجربة ديالهم",
+        "style": "white"
+      }
+    },
+    "bn_p_howto": {
+      "type": "bn-video",
+      "settings": {
+        "overlay": 40,
+        "height": "medium",
+        "anchor": "",
+        "is_h1": false,
+        "eyebrow": "How it works",
+        "heading": "How to use it",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "text": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "bn_p_steps": {
+      "type": "bn-cards",
+      "blocks": {
+        "bn_p_steps_1": {
+          "type": "card",
+          "settings": {
+            "icon": "drop",
+            "emoji": "",
+            "title": "Prepare the water",
+            "text": "Heat the water, then let it cool for 5 minutes. Never boiling water."
+          }
+        },
+        "bn_p_steps_2": {
+          "type": "card",
+          "settings": {
+            "icon": "leaf",
+            "emoji": "",
+            "title": "Add a sachet",
+            "text": "Pour the water into the seat's bowl and add a sachet."
+          }
+        },
+        "bn_p_steps_3": {
+          "type": "card",
+          "settings": {
+            "icon": "steam",
+            "emoji": "",
+            "title": "Test the steam",
+            "text": "Hold your hand above the bowl: the warmth should feel gentle."
+          }
+        },
+        "bn_p_steps_4": {
+          "type": "card",
+          "settings": {
+            "icon": "clock",
+            "emoji": "",
+            "title": "Relax",
+            "text": "10 to 15 minutes. Stop if it feels too hot."
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_steps_1",
+        "bn_p_steps_2",
+        "bn_p_steps_3",
+        "bn_p_steps_4"
+      ],
+      "settings": {
+        "anchor": "",
+        "eyebrow": "4 simple steps",
+        "heading": "In 4 steps",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "text": "",
+        "numbered": true,
+        "columns": 4,
+        "button_label": "",
+        "button_link": "",
+        "style": "blush",
+        "pattern": false
+      }
+    },
+    "bn_p_features": {
+      "type": "bn-cards",
+      "blocks": {
+        "bn_p_features_1": {
+          "type": "card",
+          "settings": {
+            "icon": "moon",
+            "emoji": "",
+            "title": "Relaxation",
+            "text": "A warm, calm break."
+          }
+        },
+        "bn_p_features_2": {
+          "type": "card",
+          "settings": {
+            "icon": "rose",
+            "emoji": "",
+            "title": "Soft scent",
+            "text": "Rose, lavender and chamomile."
+          }
+        },
+        "bn_p_features_3": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "emoji": "",
+            "title": "Self-care",
+            "text": "A date with yourself."
+          }
+        },
+        "bn_p_features_4": {
+          "type": "card",
+          "settings": {
+            "icon": "clock",
+            "emoji": "",
+            "title": "15 minutes",
+            "text": "Quick and easy, at home."
+          }
+        },
+        "bn_p_features_5": {
+          "type": "card",
+          "settings": {
+            "icon": "steam",
+            "emoji": "",
+            "title": "Hammam spirit",
+            "text": "Tradition, the gentle way."
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_features_1",
+        "bn_p_features_2",
+        "bn_p_features_3",
+        "bn_p_features_4",
+        "bn_p_features_5"
+      ],
+      "settings": {
+        "anchor": "",
+        "eyebrow": "Your moment",
+        "heading": "Everything you need to know",
+        "heading_ar": "كلشي اللي خاصك تعرفي",
+        "text": "",
+        "numbered": false,
+        "columns": 5,
+        "button_label": "",
+        "button_link": "",
+        "style": "white",
+        "pattern": false
+      }
+    },
+    "bn_p_reviews": {
+      "type": "bn-reviews",
+      "settings": {
+        "eyebrow": "What they say",
+        "heading": "Their own little moment",
+        "heading_ar": "شنو قالو البنات",
+        "style": "blush"
+      }
+    },
+    "bn_p_faq": {
+      "type": "bn-faq",
+      "blocks": {
+        "bn_p_faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "What is it exactly?",
+            "answer": "<p>An at-home wellness ritual inspired by the hammam: hot water, a sachet of dried herbs and a seat to sit on for 10 to 15 minutes. It's a moment of relaxation, not a treatment.</p>"
+          }
+        },
+        "bn_p_faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "How often should I use it?",
+            "answer": "<p>Once or twice a week, whenever you want a moment for yourself. Listen to your body.</p>"
+          }
+        },
+        "bn_p_faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I drink it?",
+            "answer": "<p>No. The herbs are for steaming only. Do not drink or eat them.</p>"
+          }
+        },
+        "bn_p_faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "Can I use it during my period or if I'm pregnant?",
+            "answer": "<p>No. Not during your period, pregnancy or breastfeeding, nor after giving birth or surgery without your doctor's advice.</p>"
+          }
+        },
+        "bn_p_faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "I have an unusual odor or discharge. Will it help?",
+            "answer": "<p>This product does not treat anything. An unusual odor, discharge, itching or pain should be checked by a doctor or midwife.</p>"
+          }
+        },
+        "bn_p_faq_6": {
+          "type": "question",
+          "settings": {
+            "question": "How do I pay?",
+            "answer": "<p>In cash, on delivery. You can check the parcel in front of the courier. If an item arrives damaged, we replace it.</p>"
+          }
+        },
+        "bn_p_faq_7": {
+          "type": "question",
+          "settings": {
+            "question": "Is the parcel discreet?",
+            "answer": "<p>Yes. The outer box shows no product name.</p>"
+          }
+        },
+        "bn_p_faq_8": {
+          "type": "question",
+          "settings": {
+            "question": "How long does delivery take?",
+            "answer": "<p>It depends on your city. We call you or message you on WhatsApp to confirm your order before shipping.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bn_p_faq_1",
+        "bn_p_faq_2",
+        "bn_p_faq_3",
+        "bn_p_faq_4",
+        "bn_p_faq_5",
+        "bn_p_faq_6",
+        "bn_p_faq_7",
+        "bn_p_faq_8"
+      ],
+      "settings": {
+        "eyebrow": "Your questions",
+        "heading": "Frequently asked questions",
+        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
+        "open_first": true,
+        "style": "cream"
+      }
+    },
+    "bn_p_safety": {
+      "type": "bn-safety",
+      "settings": {
+        "heading": "Safety & precautions",
+        "heading_ar": "قريها قبل ما تستعملي",
+        "list": "<ul><li>For external use only. Do not drink, do not eat, do not insert anything into the vagina.</li><li>Risk of burns: never sit above boiling water. Let it cool and test the steam with your hand.</li><li>Do not use during pregnancy, breastfeeding, your period, after giving birth or surgery without medical advice.</li><li>Do not use if you have a wound, irritation, infection or fever.</li><li>Contains chamomile: do not use if you are allergic to the Asteraceae family.</li><li>Stop if you feel itching, redness or irritation.</li><li>An unusual odor, discharge or pain requires a medical consultation.</li><li>For adults over 18 only. Keep out of reach of children.</li></ul>",
+        "note": "This product is not a medicine. It does not diagnose, treat or prevent any disease.",
+        "style": "cream"
       }
     },
     "product_recommendations_qggXJq": {
@@ -489,242 +744,6 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 48,
         "padding-block-end": 48
-      }
-    },
-    "bn_p_ugc": {
-      "type": "bn-ugc-videos",
-      "settings": {
-        "eyebrow": "For real",
-        "heading": "They tried the ritual",
-        "heading_ar": "شوفي التجربة ديالهم",
-        "style": "white"
-      }
-    },
-    "bn_p_howto": {
-      "type": "bn-video",
-      "settings": {
-        "height": "medium",
-        "overlay": 40,
-        "eyebrow": "How it works",
-        "heading": "How to use it",
-        "heading_ar": "كيفاش كتخدمي بيه",
-        "button_label": ""
-      }
-    },
-    "bn_p_steps": {
-      "type": "bn-cards",
-      "settings": {
-        "anchor": "",
-        "eyebrow": "4 simple steps",
-        "heading": "In 4 steps",
-        "heading_ar": "كيفاش كتخدمي بيه",
-        "numbered": true,
-        "columns": 4,
-        "style": "blush",
-        "pattern": false
-      },
-      "blocks": {
-        "bn_p_steps_1": {
-          "type": "card",
-          "settings": {
-            "title": "Prepare the water",
-            "text": "Heat the water, then let it cool for 5 minutes. Never boiling water.",
-            "icon": "drop"
-          }
-        },
-        "bn_p_steps_2": {
-          "type": "card",
-          "settings": {
-            "title": "Add a sachet",
-            "text": "Pour the water into the seat's bowl and add a sachet.",
-            "icon": "leaf"
-          }
-        },
-        "bn_p_steps_3": {
-          "type": "card",
-          "settings": {
-            "title": "Test the steam",
-            "text": "Hold your hand above the bowl: the warmth should feel gentle.",
-            "icon": "steam"
-          }
-        },
-        "bn_p_steps_4": {
-          "type": "card",
-          "settings": {
-            "title": "Relax",
-            "text": "10 to 15 minutes. Stop if it feels too hot.",
-            "icon": "clock"
-          }
-        }
-      },
-      "block_order": [
-        "bn_p_steps_1",
-        "bn_p_steps_2",
-        "bn_p_steps_3",
-        "bn_p_steps_4"
-      ]
-    },
-    "bn_p_features": {
-      "type": "bn-cards",
-      "settings": {
-        "eyebrow": "Your moment",
-        "heading": "Everything you need to know",
-        "heading_ar": "كلشي اللي خاصك تعرفي",
-        "numbered": false,
-        "columns": 5,
-        "style": "white",
-        "pattern": false
-      },
-      "blocks": {
-        "bn_p_features_1": {
-          "type": "card",
-          "settings": {
-            "emoji": "",
-            "icon": "moon",
-            "title": "Relaxation",
-            "text": "A warm, calm break."
-          }
-        },
-        "bn_p_features_2": {
-          "type": "card",
-          "settings": {
-            "emoji": "",
-            "icon": "rose",
-            "title": "Soft scent",
-            "text": "Rose, lavender and chamomile."
-          }
-        },
-        "bn_p_features_3": {
-          "type": "card",
-          "settings": {
-            "emoji": "",
-            "icon": "heart",
-            "title": "Self-care",
-            "text": "A date with yourself."
-          }
-        },
-        "bn_p_features_4": {
-          "type": "card",
-          "settings": {
-            "emoji": "",
-            "icon": "clock",
-            "title": "15 minutes",
-            "text": "Quick and easy, at home."
-          }
-        },
-        "bn_p_features_5": {
-          "type": "card",
-          "settings": {
-            "emoji": "",
-            "icon": "steam",
-            "title": "Hammam spirit",
-            "text": "Tradition, the gentle way."
-          }
-        }
-      },
-      "block_order": [
-        "bn_p_features_1",
-        "bn_p_features_2",
-        "bn_p_features_3",
-        "bn_p_features_4",
-        "bn_p_features_5"
-      ]
-    },
-    "bn_p_reviews": {
-      "type": "bn-reviews",
-      "settings": {
-        "eyebrow": "What they say",
-        "heading": "Their own little moment",
-        "heading_ar": "شنو قالو البنات",
-        "style": "blush"
-      }
-    },
-    "bn_p_faq": {
-      "type": "bn-faq",
-      "settings": {
-        "eyebrow": "Your questions",
-        "heading": "Frequently asked questions",
-        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
-        "open_first": true,
-        "style": "cream"
-      },
-      "blocks": {
-        "bn_p_faq_1": {
-          "type": "question",
-          "settings": {
-            "question": "What is it exactly?",
-            "answer": "<p>An at-home wellness ritual inspired by the hammam: hot water, a sachet of dried herbs and a seat to sit on for 10 to 15 minutes. It's a moment of relaxation, not a treatment.</p>"
-          }
-        },
-        "bn_p_faq_2": {
-          "type": "question",
-          "settings": {
-            "question": "How often should I use it?",
-            "answer": "<p>Once or twice a week, whenever you want a moment for yourself. Listen to your body.</p>"
-          }
-        },
-        "bn_p_faq_3": {
-          "type": "question",
-          "settings": {
-            "question": "Can I drink it?",
-            "answer": "<p>No. The herbs are for steaming only. Do not drink or eat them.</p>"
-          }
-        },
-        "bn_p_faq_4": {
-          "type": "question",
-          "settings": {
-            "question": "Can I use it during my period or if I'm pregnant?",
-            "answer": "<p>No. Not during your period, pregnancy or breastfeeding, nor after giving birth or surgery without your doctor's advice.</p>"
-          }
-        },
-        "bn_p_faq_5": {
-          "type": "question",
-          "settings": {
-            "question": "I have an unusual odor or discharge. Will it help?",
-            "answer": "<p>This product does not treat anything. An unusual odor, discharge, itching or pain should be checked by a doctor or midwife.</p>"
-          }
-        },
-        "bn_p_faq_6": {
-          "type": "question",
-          "settings": {
-            "question": "How do I pay?",
-            "answer": "<p>In cash, on delivery. You can check the parcel in front of the courier. If an item arrives damaged, we replace it.</p>"
-          }
-        },
-        "bn_p_faq_7": {
-          "type": "question",
-          "settings": {
-            "question": "Is the parcel discreet?",
-            "answer": "<p>Yes. The outer box shows no product name.</p>"
-          }
-        },
-        "bn_p_faq_8": {
-          "type": "question",
-          "settings": {
-            "question": "How long does delivery take?",
-            "answer": "<p>It depends on your city. We call you or message you on WhatsApp to confirm your order before shipping.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "bn_p_faq_1",
-        "bn_p_faq_2",
-        "bn_p_faq_3",
-        "bn_p_faq_4",
-        "bn_p_faq_5",
-        "bn_p_faq_6",
-        "bn_p_faq_7",
-        "bn_p_faq_8"
-      ]
-    },
-    "bn_p_safety": {
-      "type": "bn-safety",
-      "settings": {
-        "heading": "Safety & precautions",
-        "heading_ar": "قريها قبل ما تستعملي",
-        "list": "<ul><li>For external use only. Do not drink, do not eat, do not insert anything into the vagina.</li><li>Risk of burns: never sit above boiling water. Let it cool and test the steam with your hand.</li><li>Do not use during pregnancy, breastfeeding, your period, after giving birth or surgery without medical advice.</li><li>Do not use if you have a wound, irritation, infection or fever.</li><li>Contains chamomile: do not use if you are allergic to the Asteraceae family.</li><li>Stop if you feel itching, redness or irritation.</li><li>An unusual odor, discharge or pain requires a medical consultation.</li><li>For adults over 18 only. Keep out of reach of children.</li></ul>",
-        "note": "This product is not a medicine. It does not diagnose, treat or prevent any disease.",
-        "style": "cream"
       }
     }
   },
