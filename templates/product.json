@@ -281,12 +281,19 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 }
               },
               "block_order": []
+            },
+            "webi_leadform_leadform_kjACxe": {
+              "type": "shopify://apps/webi-leadform/blocks/leadform/3a127389-69cb-41d6-8e5c-10311613fcf7",
+              "settings": {
+                "leadformcodv3": ""
+              }
             },
             "bn_badges": {
               "type": "bn-trust-badges",
@@ -333,6 +340,7 @@
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "webi_leadform_leadform_kjACxe",
             "bn_badges",
             "text_aEtTtq"
           ]
