@@ -184,15 +184,16 @@
         "bn_why_3"
       ],
       "settings": {
+        "image": "shopify://shop_images/Ritueldevapeurauxplantesmarocaines.png",
         "reverse": true,
+        "check_icons": true,
         "eyebrow": "They can't do without it",
         "heading": "A simple ritual that feels good",
         "heading_ar": "لحظة صغيرة، راحة كبيرة",
         "text": "<p>A moment just for you, every week, without leaving home.</p>",
         "button_label": "Discover the ritual",
         "button_link": "",
-        "style": "white",
-        "check_icons": true
+        "style": "white"
       }
     },
     "bn_what": {
@@ -229,7 +230,9 @@
         "bn_what_3"
       ],
       "settings": {
+        "image": "shopify://shop_images/RitueldevapeurmarocainBlossyNour.png",
         "reverse": false,
+        "check_icons": false,
         "eyebrow": "The ritual",
         "heading": "What is the herbal steam ritual?",
         "heading_ar": "شنو هو البخار بالعشوب؟",
