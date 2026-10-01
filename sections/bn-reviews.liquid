@@ -14,7 +14,7 @@
             {%- if block.settings.image != blank -%}
               {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'Message de cliente' }}
             {%- endif -%}
-            <span class="bn-review__stars" aria-label="{{ block.settings.rating }} sur 5">{% for i in (1..block.settings.rating) %}★{% endfor %}</span>
+            <span class="bn-review__stars" aria-label="{{ block.settings.rating }} sur 5">{% for i in (1..block.settings.rating) %}{% render 'bn-icon', name: 'star', class: 'bn-star' %}{% endfor %}</span>
             <p class="bn-review__text">{{ block.settings.text }}</p>
             <p class="bn-review__who">{{ block.settings.name }}{% if block.settings.city != blank %} <span>· {{ block.settings.city }}</span>{% endif %}</p>
           </li>

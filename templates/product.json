@@ -303,10 +303,12 @@
             "bn_promo": {
               "type": "bn-promo",
               "settings": {
-                "promo": "🚚 Livraison gratuite sur ce pack",
-                "tagline": "Votre petit moment hammam, chez vous 🌸",
+                "promo": "Livraison gratuite sur ce pack",
+                "tagline": "Votre petit moment hammam, chez vous",
                 "tagline_ar": "حمام صغير فدارك",
-                "checklist": "1 siège de rituel stable\n12 sachets de plantes séchées\nLa carte du rituel et les consignes de sécurité\nPaiement à la livraison partout au Maroc"
+                "checklist": "1 siège de rituel stable\n12 sachets de plantes séchées\nLa carte du rituel et les consignes de sécurité\nPaiement à la livraison partout au Maroc",
+                "promo_icon": "truck",
+                "tagline_icon": "rose"
               }
             },
             "bn_badges": {
@@ -577,7 +579,7 @@
         "bn_p_features_1": {
           "type": "card",
           "settings": {
-            "emoji": "🌙",
+            "emoji": "",
             "icon": "moon",
             "title": "Détente",
             "text": "Une pause chaude et calme."
@@ -586,7 +588,7 @@
         "bn_p_features_2": {
           "type": "card",
           "settings": {
-            "emoji": "🌹",
+            "emoji": "",
             "icon": "rose",
             "title": "Parfum doux",
             "text": "Rose, lavande et camomille."
@@ -595,7 +597,7 @@
         "bn_p_features_3": {
           "type": "card",
           "settings": {
-            "emoji": "💆🏻‍♀️",
+            "emoji": "",
             "icon": "heart",
             "title": "Self-care",
             "text": "Un rendez-vous avec vous-même."
@@ -604,7 +606,7 @@
         "bn_p_features_4": {
           "type": "card",
           "settings": {
-            "emoji": "⏱️",
+            "emoji": "",
             "icon": "clock",
             "title": "15 minutes",
             "text": "Simple et rapide, chez vous."
@@ -613,7 +615,7 @@
         "bn_p_features_5": {
           "type": "card",
           "settings": {
-            "emoji": "🛁",
+            "emoji": "",
             "icon": "steam",
             "title": "Esprit hammam",
             "text": "La tradition, en version douce."

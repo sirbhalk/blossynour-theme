@@ -27,7 +27,7 @@
       {%- if section.blocks.size > 0 -%}
         <ul class="bn-hero__chips" role="list">
           {%- for block in section.blocks -%}
-            <li class="bn-chip" {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+            <li class="bn-chip" {{ block.shopify_attributes }}>{% if block.settings.icon != 'none' %}{% render 'bn-icon', name: block.settings.icon, class: 'bn-inline-icon' %}{% endif %}<span>{{ block.settings.text }}</span></li>
           {%- endfor -%}
         </ul>
       {%- endif -%}
@@ -51,27 +51,171 @@
   "name": "BN · Hero",
   "class": "bn-shopify-section",
   "settings": [
-    { "type": "image_picker", "id": "background_image", "label": "Full-width background image (optional)" },
-    { "type": "image_picker", "id": "arch_image", "label": "Image inside the arch", "info": "Used when there is no background image. Portrait photo works best." },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Rituel de vapeur aux plantes" },
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Votre petit hammam, chez vous" },
-    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "حمام صغير فدارك" },
-    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>15 minutes de chaleur douce et de parfums de rose, rien que pour vous. Un rituel bien-être inspiré du hammam marocain.</p>" },
-    { "type": "text", "id": "button_label", "label": "Button label", "default": "Commencer mon rituel" },
-    { "type": "url", "id": "button_link", "label": "Button link" },
-    { "type": "text", "id": "button2_label", "label": "Second button label", "default": "Comment ça marche" },
-    { "type": "url", "id": "button2_link", "label": "Second button link" }
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Full-width background image (optional)"
+    },
+    {
+      "type": "image_picker",
+      "id": "arch_image",
+      "label": "Image inside the arch",
+      "info": "Used when there is no background image. Portrait photo works best."
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Rituel de vapeur aux plantes"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Votre petit hammam, chez vous"
+    },
+    {
+      "type": "text",
+      "id": "heading_ar",
+      "label": "Arabic / Darija line",
+      "default": "حمام صغير فدارك"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>15 minutes de chaleur douce et de parfums de rose, rien que pour vous. Un rituel bien-être inspiré du hammam marocain.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Commencer mon rituel"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button2_label",
+      "label": "Second button label",
+      "default": "Comment ça marche"
+    },
+    {
+      "type": "url",
+      "id": "button2_link",
+      "label": "Second button link"
+    }
   ],
   "blocks": [
-    { "type": "chip", "name": "Chip", "settings": [ { "type": "text", "id": "text", "label": "Text", "default": "Paiement à la livraison" } ] }
+    {
+      "type": "chip",
+      "name": "Chip",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "rose",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "cash",
+              "label": "Cash"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "rose",
+              "label": "Rose"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            },
+            {
+              "value": "steam",
+              "label": "Steam"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "moon",
+              "label": "Moon"
+            },
+            {
+              "value": "clock",
+              "label": "Clock"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "shield",
+              "label": "Shield"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            },
+            {
+              "value": "calendar",
+              "label": "Calendar"
+            },
+            {
+              "value": "spa",
+              "label": "Spa"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Paiement à la livraison"
+        }
+      ]
+    }
   ],
   "presets": [
     {
       "name": "BN · Hero",
       "blocks": [
-        { "type": "chip", "settings": { "text": "🌹 Plantes marocaines" } },
-        { "type": "chip", "settings": { "text": "💵 Paiement à la livraison" } },
-        { "type": "chip", "settings": { "text": "📦 Emballage discret" } }
+        {
+          "type": "chip",
+          "settings": {
+            "icon": "rose",
+            "text": "Plantes marocaines"
+          }
+        },
+        {
+          "type": "chip",
+          "settings": {
+            "icon": "cash",
+            "text": "Paiement à la livraison"
+          }
+        },
+        {
+          "type": "chip",
+          "settings": {
+            "icon": "box",
+            "text": "Emballage discret"
+          }
+        }
       ]
     }
   ]

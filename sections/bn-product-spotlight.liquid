@@ -46,7 +46,15 @@
       {%- elsif request.design_mode -%}
         <p class="bn-editor-note">Choisissez le produit du rituel complet dans les réglages de cette section.</p>
       {%- endif -%}
-      {%- if section.settings.reassure != blank -%}<p class="bn-reassure">{{ section.settings.reassure }}</p>{%- endif -%}
+      {%- if section.settings.reassure != blank -%}
+        {%- assign r_items = section.settings.reassure | split: '·' -%}
+        {%- assign r_icons = 'truck,cash,box,shield' | split: ',' -%}
+        <ul class="bn-reassure bn-reassure--icons" role="list">
+          {%- for item in r_items -%}
+            <li>{% render 'bn-icon', name: r_icons[forloop.index0], class: 'bn-inline-icon' %}<span>{{ item | strip }}</span></li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
     </div>
   </div>
 </section>
@@ -61,7 +69,7 @@
     { "type": "text", "id": "fallback_title", "label": "Title when no product is selected", "default": "Le Rituel Complet" },
     { "type": "text", "id": "subtitle_ar", "label": "Arabic / Darija line", "default": "كلشي اللي خاصك باش تبداي" },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Commander — paiement à la livraison" },
-    { "type": "text", "id": "reassure", "label": "Reassurance line", "default": "🚚 Livraison gratuite · 💵 Payez à la réception · 📦 Colis discret" },
+    { "type": "text", "id": "reassure", "label": "Reassurance line", "default": "Livraison gratuite · Payez à la réception · Colis discret" },
     { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
       { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }
     ] }

@@ -156,7 +156,7 @@
         "bn_why_1": {
           "type": "ingredient",
           "settings": {
-            "name": "✔︎ Simple",
+            "name": "Simple",
             "text": "De l'eau chaude, un sachet, 15 minutes",
             "latin": ""
           }
@@ -164,7 +164,7 @@
         "bn_why_2": {
           "type": "ingredient",
           "settings": {
-            "name": "✔︎ Chez vous",
+            "name": "Chez vous",
             "text": "Pas besoin d'aller au hammam",
             "latin": ""
           }
@@ -172,7 +172,7 @@
         "bn_why_3": {
           "type": "ingredient",
           "settings": {
-            "name": "✔︎ Discret",
+            "name": "Discret",
             "text": "Colis neutre, paiement à la livraison",
             "latin": ""
           }
@@ -191,7 +191,8 @@
         "text": "<p>Un moment rien qu'à vous, chaque semaine, sans sortir de chez vous.</p>",
         "button_label": "Découvrir le rituel",
         "button_link": "",
-        "style": "white"
+        "style": "white",
+        "check_icons": true
       }
     },
     "bn_what": {
@@ -425,7 +426,7 @@
     "bn_sticky": {
       "type": "bn-sticky-cta",
       "settings": {
-        "label": "Commencer mon rituel 🌸",
+        "label": "Commencer mon rituel",
         "link": ""
       }
     }

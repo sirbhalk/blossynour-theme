@@ -11,62 +11,6 @@
   "type": "header",
   "name": "t:names.header",
   "sections": {
-    "header_announcements_9jGBFp": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_bn1": {
-          "type": "_announcement",
-          "settings": {
-            "text": "🚚 Livraison gratuite sur le pack complet",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "letter_spacing": "normal",
-            "case": "none",
-            "text_color": "#FBF5EE"
-          },
-          "blocks": {}
-        },
-        "announcement_bn2": {
-          "type": "_announcement",
-          "settings": {
-            "text": "🌸 Votre petit hammam, chez vous · حمام صغير فدارك",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "letter_spacing": "normal",
-            "case": "none",
-            "text_color": "#FBF5EE"
-          },
-          "blocks": {}
-        },
-        "announcement_bn3": {
-          "type": "_announcement",
-          "settings": {
-            "text": "💵 Paiement à la livraison partout au Maroc",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "letter_spacing": "normal",
-            "case": "none",
-            "text_color": "#FBF5EE"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "announcement_bn1",
-        "announcement_bn2",
-        "announcement_bn3"
-      ],
-      "name": "t:names.announcement_bar",
-      "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "background_color": "#4A2A3A",
-        "divider_width": 0,
-        "divider_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 15,
-        "padding-block-end": 15
-      }
-    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -126,10 +70,48 @@
         "enable_transparent_header_product": false,
         "enable_transparent_header_collection": false
       }
+    },
+    "bn_announcement": {
+      "type": "bn-announcement",
+      "settings": {
+        "background": "#4A2A3A",
+        "text_color": "#FBF5EE"
+      },
+      "blocks": {
+        "bn_ann_1": {
+          "type": "message",
+          "settings": {
+            "icon": "truck",
+            "text": "Livraison gratuite sur le pack complet",
+            "link": ""
+          }
+        },
+        "bn_ann_2": {
+          "type": "message",
+          "settings": {
+            "icon": "rose",
+            "text": "Votre petit hammam, chez vous · حمام صغير فدارك",
+            "link": ""
+          }
+        },
+        "bn_ann_3": {
+          "type": "message",
+          "settings": {
+            "icon": "cash",
+            "text": "Paiement à la livraison partout au Maroc",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "bn_ann_1",
+        "bn_ann_2",
+        "bn_ann_3"
+      ]
     }
   },
   "order": [
-    "header_announcements_9jGBFp",
+    "bn_announcement",
     "header_section"
   ]
 }
