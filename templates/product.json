@@ -720,6 +720,10 @@
     "bn_p_safety": {
       "type": "bn-safety",
       "settings": {
+        "heading": "Safety & precautions",
+        "heading_ar": "قريها قبل ما تستعملي",
+        "list": "<ul><li>For external use only. Do not drink, do not eat, do not insert anything into the vagina.</li><li>Risk of burns: never sit above boiling water. Let it cool and test the steam with your hand.</li><li>Do not use during pregnancy, breastfeeding, your period, after giving birth or surgery without medical advice.</li><li>Do not use if you have a wound, irritation, infection or fever.</li><li>Contains chamomile: do not use if you are allergic to the Asteraceae family.</li><li>Stop if you feel itching, redness or irritation.</li><li>An unusual odor, discharge or pain requires a medical consultation.</li><li>For adults over 18 only. Keep out of reach of children.</li></ul>",
+        "note": "This product is not a medicine. It does not diagnose, treat or prevent any disease.",
         "style": "cream"
       }
     }
