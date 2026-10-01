@@ -12,21 +12,20 @@
     "bn_hero_video": {
       "type": "bn-video",
       "settings": {
-        "height": "large",
         "overlay": 35,
+        "height": "large",
+        "anchor": "",
         "is_h1": true,
         "eyebrow": "Rituel de vapeur aux plantes",
         "heading": "Votre petit hammam, chez vous",
         "heading_ar": "حمام صغير فدارك",
         "text": "<p>15 minutes de chaleur douce et de parfums de rose, rien que pour vous.</p>",
-        "button_label": "Commencer mon rituel"
+        "button_label": "Commencer mon rituel",
+        "button_link": ""
       }
     },
     "bn_trust": {
       "type": "bn-trust",
-      "settings": {
-        "style": "blush"
-      },
       "blocks": {
         "bn_trust_1": {
           "type": "item",
@@ -66,39 +65,106 @@
         "bn_trust_2",
         "bn_trust_3",
         "bn_trust_4"
-      ]
+      ],
+      "settings": {
+        "style": "blush"
+      }
+    },
+    "bn_benefits": {
+      "type": "bn-cards",
+      "blocks": {
+        "bn_benefits_1": {
+          "type": "card",
+          "settings": {
+            "icon": "moon",
+            "emoji": "🌙",
+            "title": "Détente",
+            "text": "Une pause chaude et calme."
+          }
+        },
+        "bn_benefits_2": {
+          "type": "card",
+          "settings": {
+            "icon": "rose",
+            "emoji": "🌹",
+            "title": "Parfum doux",
+            "text": "Rose, lavande et camomille."
+          }
+        },
+        "bn_benefits_3": {
+          "type": "card",
+          "settings": {
+            "icon": "heart",
+            "emoji": "💆🏻‍♀️",
+            "title": "Self-care",
+            "text": "Un rendez-vous avec vous-même."
+          }
+        },
+        "bn_benefits_4": {
+          "type": "card",
+          "settings": {
+            "icon": "clock",
+            "emoji": "⏱️",
+            "title": "15 minutes",
+            "text": "Simple et rapide, chez vous."
+          }
+        },
+        "bn_benefits_5": {
+          "type": "card",
+          "settings": {
+            "icon": "steam",
+            "emoji": "🛁",
+            "title": "Esprit hammam",
+            "text": "La tradition, en version douce."
+          }
+        }
+      },
+      "block_order": [
+        "bn_benefits_1",
+        "bn_benefits_2",
+        "bn_benefits_3",
+        "bn_benefits_4",
+        "bn_benefits_5"
+      ],
+      "settings": {
+        "anchor": "",
+        "eyebrow": "Votre moment",
+        "heading": "Pourquoi elles l'adorent",
+        "heading_ar": "علاش البنات عجبهم",
+        "text": "",
+        "numbered": false,
+        "columns": 5,
+        "button_label": "",
+        "button_link": "",
+        "style": "cream",
+        "pattern": false
+      }
     },
     "bn_why": {
       "type": "bn-story",
-      "settings": {
-        "reverse": true,
-        "eyebrow": "Elles ne s'en passent plus",
-        "heading": "Un rituel simple qui fait du bien",
-        "heading_ar": "لحظة صغيرة، راحة كبيرة",
-        "text": "<p>Un moment rien qu'à vous, chaque semaine, sans sortir de chez vous.</p>",
-        "button_label": "Découvrir le rituel",
-        "style": "white"
-      },
       "blocks": {
         "bn_why_1": {
           "type": "ingredient",
           "settings": {
             "name": "✔︎ Simple",
-            "text": "De l'eau chaude, un sachet, 15 minutes"
+            "text": "De l'eau chaude, un sachet, 15 minutes",
+            "latin": ""
           }
         },
         "bn_why_2": {
           "type": "ingredient",
           "settings": {
             "name": "✔︎ Chez vous",
-            "text": "Pas besoin d'aller au hammam"
+            "text": "Pas besoin d'aller au hammam",
+            "latin": ""
           }
         },
         "bn_why_3": {
           "type": "ingredient",
           "settings": {
             "name": "✔︎ Discret",
-            "text": "Colis neutre, paiement à la livraison"
+            "text": "Colis neutre, paiement à la livraison",
+            "latin": ""
           }
         }
       },
@@ -106,18 +172,20 @@
         "bn_why_1",
         "bn_why_2",
         "bn_why_3"
-      ]
+      ],
+      "settings": {
+        "reverse": true,
+        "eyebrow": "Elles ne s'en passent plus",
+        "heading": "Un rituel simple qui fait du bien",
+        "heading_ar": "لحظة صغيرة، راحة كبيرة",
+        "text": "<p>Un moment rien qu'à vous, chaque semaine, sans sortir de chez vous.</p>",
+        "button_label": "Découvrir le rituel",
+        "button_link": "",
+        "style": "white"
+      }
     },
     "bn_what": {
       "type": "bn-story",
-      "settings": {
-        "reverse": false,
-        "eyebrow": "Le rituel",
-        "heading": "C'est quoi, le rituel de vapeur aux plantes ?",
-        "heading_ar": "شنو هو البخار بالعشوب؟",
-        "text": "<p>Une tradition de bien-être : vous vous installez au-dessus d'un bol d'eau chaude parfumée aux plantes séchées, pour un moment de chaleur et de calme. Un geste de détente, pas un soin médical.</p>",
-        "style": "cream"
-      },
       "blocks": {
         "bn_what_1": {
           "type": "ingredient",
@@ -148,63 +216,70 @@
         "bn_what_1",
         "bn_what_2",
         "bn_what_3"
-      ]
+      ],
+      "settings": {
+        "reverse": false,
+        "eyebrow": "Le rituel",
+        "heading": "C'est quoi, le rituel de vapeur aux plantes ?",
+        "heading_ar": "شنو هو البخار بالعشوب؟",
+        "text": "<p>Une tradition de bien-être : vous vous installez au-dessus d'un bol d'eau chaude parfumée aux plantes séchées, pour un moment de chaleur et de calme. Un geste de détente, pas un soin médical.</p>",
+        "button_label": "",
+        "button_link": "",
+        "style": "cream"
+      }
     },
     "bn_bundle_video": {
       "type": "bn-video",
       "settings": {
-        "height": "medium",
         "overlay": 40,
+        "height": "medium",
+        "anchor": "",
+        "is_h1": false,
         "eyebrow": "Le pack complet",
         "heading": "Complétez votre rituel",
         "heading_ar": "كلشي اللي خاصك فبوكس واحد",
         "text": "<p>Le siège + 12 sachets de plantes. Livraison gratuite.</p>",
-        "button_label": "Je prends le pack complet"
+        "button_label": "Je prends le pack complet",
+        "button_link": ""
       }
     },
     "bn_steps": {
       "type": "bn-cards",
-      "settings": {
-        "anchor": "bn-steps",
-        "eyebrow": "4 étapes simples",
-        "heading": "Comment l'utiliser",
-        "heading_ar": "كيفاش كتخدمي بيه",
-        "numbered": true,
-        "columns": 4,
-        "style": "blush",
-        "pattern": false
-      },
       "blocks": {
         "bn_steps_1": {
           "type": "card",
           "settings": {
+            "icon": "drop",
+            "emoji": "",
             "title": "Préparez l'eau",
-            "text": "Faites chauffer l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
-            "icon": "drop"
+            "text": "Faites chauffer l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante."
           }
         },
         "bn_steps_2": {
           "type": "card",
           "settings": {
+            "icon": "leaf",
+            "emoji": "",
             "title": "Ajoutez un sachet",
-            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet.",
-            "icon": "leaf"
+            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet."
           }
         },
         "bn_steps_3": {
           "type": "card",
           "settings": {
+            "icon": "steam",
+            "emoji": "",
             "title": "Testez la vapeur",
-            "text": "Passez la main au-dessus du bol : la chaleur doit être douce.",
-            "icon": "steam"
+            "text": "Passez la main au-dessus du bol : la chaleur doit être douce."
           }
         },
         "bn_steps_4": {
           "type": "card",
           "settings": {
+            "icon": "clock",
+            "emoji": "",
             "title": "Détendez-vous",
-            "text": "10 à 15 minutes. Arrêtez si c'est trop chaud.",
-            "icon": "clock"
+            "text": "10 à 15 minutes. Arrêtez si c'est trop chaud."
           }
         }
       },
@@ -213,17 +288,23 @@
         "bn_steps_2",
         "bn_steps_3",
         "bn_steps_4"
-      ]
+      ],
+      "settings": {
+        "anchor": "bn-steps",
+        "eyebrow": "4 étapes simples",
+        "heading": "Comment l'utiliser",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "text": "",
+        "numbered": true,
+        "columns": 4,
+        "button_label": "",
+        "button_link": "",
+        "style": "blush",
+        "pattern": false
+      }
     },
     "bn_faq": {
       "type": "bn-faq",
-      "settings": {
-        "eyebrow": "Vos questions",
-        "heading": "Questions fréquentes",
-        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
-        "open_first": true,
-        "style": "cream"
-      },
       "blocks": {
         "bn_faq_1": {
           "type": "question",
@@ -291,7 +372,14 @@
         "bn_faq_6",
         "bn_faq_7",
         "bn_faq_8"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "Vos questions",
+        "heading": "Questions fréquentes",
+        "heading_ar": "الأسئلة اللي كتطرحو بزاف",
+        "open_first": true,
+        "style": "cream"
+      }
     },
     "bn_reviews": {
       "type": "bn-reviews",
@@ -305,6 +393,7 @@
     "bn_grid": {
       "type": "bn-product-grid",
       "settings": {
+        "collection": "",
         "limit": 3,
         "columns": 3,
         "eyebrow": "La boutique",
@@ -316,109 +405,25 @@
     "bn_safety": {
       "type": "bn-safety",
       "settings": {
+        "heading": "Sécurité & précautions",
+        "heading_ar": "قريها قبل ما تستعملي",
+        "list": "<ul><li>Usage externe uniquement. Ne pas boire, ne pas manger, ne rien introduire dans le vagin.</li><li>Risque de brûlure : ne jamais s'asseoir au-dessus d'une eau bouillante. Laissez refroidir et testez la vapeur avec la main.</li><li>Ne pas utiliser pendant la grossesse, l'allaitement, les règles, après un accouchement ou une opération sans avis médical.</li><li>Ne pas utiliser en cas de plaie, irritation, infection ou fièvre.</li><li>Contient de la camomille : ne pas utiliser en cas d'allergie aux Astéracées.</li><li>Arrêtez en cas de démangeaison, rougeur ou irritation.</li><li>Une odeur inhabituelle, des pertes ou une douleur nécessitent une consultation médicale.</li><li>Réservé aux plus de 18 ans. Tenir hors de portée des enfants.</li></ul>",
+        "note": "Ce produit n'est pas un médicament. Il ne diagnostique, ne traite et ne prévient aucune maladie.",
         "style": "cream"
       }
     },
     "bn_sticky": {
       "type": "bn-sticky-cta",
       "settings": {
-        "label": "Commencer mon rituel 🌸"
+        "label": "Commencer mon rituel 🌸",
+        "link": ""
       }
-    },
-    "bn_stats": {
-      "type": "bn-stats",
-      "settings": {
-        "style": "plum",
-        "heading": "",
-        "note": ""
-      },
-      "blocks": {
-        "bn_stats_1": {
-          "type": "stat",
-          "settings": {
-            "number": "15 min",
-            "label": "Pour un rituel complet"
-          }
-        },
-        "bn_stats_2": {
-          "type": "stat",
-          "settings": {
-            "number": "12",
-            "label": "Rituels dans chaque box"
-          }
-        },
-        "bn_stats_3": {
-          "type": "stat",
-          "settings": {
-            "number": "0 DH",
-            "label": "De livraison sur le pack complet"
-          }
-        }
-      },
-      "block_order": [
-        "bn_stats_1",
-        "bn_stats_2",
-        "bn_stats_3"
-      ]
-    },
-    "bn_benefits_icons": {
-      "type": "bn-benefits",
-      "settings": {
-        "heading": "Les bienfaits du rituel",
-        "heading_ar": "شنو غادي تحسي",
-        "style": "white"
-      },
-      "blocks": {
-        "bn_ben_1": {
-          "type": "benefit",
-          "settings": {
-            "icon": "rose",
-            "text": "Un parfum floral et doux de plantes séchées"
-          }
-        },
-        "bn_ben_2": {
-          "type": "benefit",
-          "settings": {
-            "icon": "moon",
-            "text": "Un vrai moment de détente et de calme"
-          }
-        },
-        "bn_ben_3": {
-          "type": "benefit",
-          "settings": {
-            "icon": "calendar",
-            "text": "Votre rendez-vous bien-être de la semaine"
-          }
-        },
-        "bn_ben_4": {
-          "type": "benefit",
-          "settings": {
-            "icon": "steam",
-            "text": "Une chaleur douce et réconfortante"
-          }
-        },
-        "bn_ben_5": {
-          "type": "benefit",
-          "settings": {
-            "icon": "spa",
-            "text": "Une expérience spa, chez vous"
-          }
-        }
-      },
-      "block_order": [
-        "bn_ben_1",
-        "bn_ben_2",
-        "bn_ben_3",
-        "bn_ben_4",
-        "bn_ben_5"
-      ]
     }
   },
   "order": [
     "bn_hero_video",
-    "bn_stats",
-    "bn_benefits_icons",
     "bn_trust",
+    "bn_benefits",
     "bn_why",
     "bn_what",
     "bn_bundle_video",
