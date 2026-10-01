@@ -106,6 +106,13 @@
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
+    "blocks": {
+      "15165894939033687467": {
+        "type": "shopify://apps/webi-leadform/blocks/leadform-embed/3a127389-69cb-41d6-8e5c-10311613fcf7",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_palette": {
       "background": "#FBF5EE",
       "foreground": "#4A2A3A",
