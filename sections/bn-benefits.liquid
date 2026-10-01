@@ -1,0 +1,57 @@
+<section class="bn-section bn-benefits bn-section--{{ section.settings.style }}">
+  <div class="bn-container">
+    <h2 class="bn-benefits__title bn-center">{{ section.settings.heading }}</h2>
+    {%- if section.settings.heading_ar != blank -%}<span class="bn-ar bn-center" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+    <ul class="bn-benefits__grid" role="list">
+      {%- for block in section.blocks -%}
+        <li class="bn-benefits__item" {{ block.shopify_attributes }}>
+          <span class="bn-benefits__icon">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
+            {%- else -%}
+              {% render 'bn-icon', name: block.settings.icon %}
+            {%- endif -%}
+          </span>
+          <p>{{ block.settings.text }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Benefits icons",
+  "settings": [
+    { "type": "paragraph", "content": "Describe the experience (relaxation, scent, warmth). Avoid health promises such as odor, periods, pH or infections." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Les bienfaits du rituel" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "شنو غادي تحسي" },
+    { "type": "select", "id": "style", "label": "Background", "default": "white", "options": [
+      { "value": "white", "label": "White" }, { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "benefit", "name": "Benefit", "settings": [
+      { "type": "select", "id": "icon", "label": "Icon", "default": "rose", "options": [
+        { "value": "rose", "label": "Rose" }, { "value": "leaf", "label": "Leaf" }, { "value": "steam", "label": "Steam" },
+        { "value": "moon", "label": "Moon" }, { "value": "calendar", "label": "Calendar" }, { "value": "spa", "label": "Spa" },
+        { "value": "heart", "label": "Heart" }, { "value": "clock", "label": "Clock" }, { "value": "sparkle", "label": "Sparkle" }
+      ] },
+      { "type": "image_picker", "id": "image", "label": "Custom icon image (optional)" },
+      { "type": "text", "id": "text", "label": "Text", "default": "Un parfum floral et doux" }
+    ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · Benefits icons",
+      "blocks": [
+        { "type": "benefit", "settings": { "icon": "rose", "text": "Un parfum floral et doux de plantes séchées" } },
+        { "type": "benefit", "settings": { "icon": "moon", "text": "Un vrai moment de détente et de calme" } },
+        { "type": "benefit", "settings": { "icon": "calendar", "text": "Votre rendez-vous bien-être de la semaine" } },
+        { "type": "benefit", "settings": { "icon": "steam", "text": "Une chaleur douce et réconfortante" } },
+        { "type": "benefit", "settings": { "icon": "spa", "text": "Une expérience spa, chez vous" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

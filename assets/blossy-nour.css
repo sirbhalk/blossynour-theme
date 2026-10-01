@@ -525,3 +525,26 @@
 @media (min-width: 750px) and (max-width: 989px) {
   .bn-cards .bn-grid[style*="--bn-cols: 5"] { --bn-cols: 3 !important; }
 }
+
+/* ---------- numbers banner ---------- */
+.bn-stats { padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(40px, 6vw, 72px); }
+.bn-stats__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--bn-cols, 3), minmax(0, 1fr)); gap: 24px; text-align: center; }
+.bn-stats__item { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.bn-stats__num { font-family: var(--bn-body); font-weight: 700; font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1; color: var(--bn-fg); letter-spacing: -0.02em; }
+.bn-stats__label { font-size: clamp(0.95rem, 1.5vw, 1.15rem); color: var(--bn-muted); }
+.bn-stats__note { margin: 24px 0 0; text-align: center; font-size: 0.75rem; color: var(--bn-muted); opacity: 0.8; }
+
+/* ---------- benefits icons ---------- */
+.bn-benefits__title { font-family: var(--bn-heading); font-weight: 400; font-size: clamp(1.9rem, 4vw, 2.8rem); text-transform: uppercase; letter-spacing: 0.02em; margin: 0 0 8px; color: var(--bn-fg); }
+.bn-benefits .bn-ar { margin-bottom: 40px; }
+.bn-benefits__grid { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px 24px; }
+.bn-benefits__item { flex: 0 1 calc((100% - 48px) / 3); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+.bn-benefits__item p { margin: 0; font-size: 1.02rem; line-height: 1.45; color: var(--bn-plum); max-width: 320px; }
+.bn-benefits__icon { position: relative; width: 92px; height: 92px; display: grid; place-items: center; color: var(--bn-plum); }
+.bn-benefits__icon::before { content: ''; position: absolute; inset: 6px; background: var(--bn-blush); opacity: 0.6; border-radius: 58% 42% 55% 45% / 48% 60% 40% 52%; }
+.bn-benefits__icon svg, .bn-benefits__icon img { position: relative; width: 58px; height: 58px; object-fit: contain; }
+@media (max-width: 749px) {
+  .bn-stats__grid { grid-template-columns: 1fr; gap: 32px; }
+  .bn-benefits__item { flex-basis: calc((100% - 24px) / 2); }
+}
+@media (max-width: 420px) { .bn-benefits__item { flex-basis: 100%; } }

@@ -1,0 +1,44 @@
+<section class="bn-section bn-stats bn-section--{{ section.settings.style }}">
+  <div class="bn-container">
+    {%- if section.settings.heading != blank -%}<h2 class="bn-title bn-center">{{ section.settings.heading }}</h2>{%- endif -%}
+    <ul class="bn-stats__grid" role="list" style="--bn-cols: {{ section.blocks.size | at_most: 4 | at_least: 1 }};">
+      {%- for block in section.blocks -%}
+        <li class="bn-stats__item" {{ block.shopify_attributes }}>
+          <span class="bn-stats__num">{{ block.settings.number }}</span>
+          <span class="bn-stats__label">{{ block.settings.label }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- if section.settings.note != blank -%}<p class="bn-stats__note">{{ section.settings.note }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Numbers banner",
+  "settings": [
+    { "type": "paragraph", "content": "Only use true numbers. A percentage about customers needs a real survey behind it, and the note below should say where it comes from." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "text", "id": "note", "label": "Source note (small text under the numbers)" },
+    { "type": "select", "id": "style", "label": "Background", "default": "plum", "options": [
+      { "value": "plum", "label": "Plum" }, { "value": "blush", "label": "Blush" }, { "value": "cream", "label": "Cream" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "stat", "name": "Number", "limit": 4, "settings": [
+      { "type": "text", "id": "number", "label": "Number", "default": "15 min" },
+      { "type": "text", "id": "label", "label": "Label", "default": "Pour un rituel complet" }
+    ] }
+  ],
+  "presets": [
+    {
+      "name": "BN · Numbers banner",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "15 min", "label": "Pour un rituel complet" } },
+        { "type": "stat", "settings": { "number": "12", "label": "Rituels dans chaque box" } },
+        { "type": "stat", "settings": { "number": "0 DH", "label": "De livraison sur le pack complet" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

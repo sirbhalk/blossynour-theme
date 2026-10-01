@@ -68,72 +68,6 @@
         "bn_trust_4"
       ]
     },
-    "bn_benefits": {
-      "type": "bn-cards",
-      "settings": {
-        "eyebrow": "Votre moment",
-        "heading": "Pourquoi elles l'adorent",
-        "heading_ar": "علاش البنات عجبهم",
-        "numbered": false,
-        "columns": 5,
-        "style": "cream",
-        "pattern": false
-      },
-      "blocks": {
-        "bn_benefits_1": {
-          "type": "card",
-          "settings": {
-            "emoji": "🌙",
-            "icon": "moon",
-            "title": "Détente",
-            "text": "Une pause chaude et calme."
-          }
-        },
-        "bn_benefits_2": {
-          "type": "card",
-          "settings": {
-            "emoji": "🌹",
-            "icon": "rose",
-            "title": "Parfum doux",
-            "text": "Rose, lavande et camomille."
-          }
-        },
-        "bn_benefits_3": {
-          "type": "card",
-          "settings": {
-            "emoji": "💆🏻‍♀️",
-            "icon": "heart",
-            "title": "Self-care",
-            "text": "Un rendez-vous avec vous-même."
-          }
-        },
-        "bn_benefits_4": {
-          "type": "card",
-          "settings": {
-            "emoji": "⏱️",
-            "icon": "clock",
-            "title": "15 minutes",
-            "text": "Simple et rapide, chez vous."
-          }
-        },
-        "bn_benefits_5": {
-          "type": "card",
-          "settings": {
-            "emoji": "🛁",
-            "icon": "steam",
-            "title": "Esprit hammam",
-            "text": "La tradition, en version douce."
-          }
-        }
-      },
-      "block_order": [
-        "bn_benefits_1",
-        "bn_benefits_2",
-        "bn_benefits_3",
-        "bn_benefits_4",
-        "bn_benefits_5"
-      ]
-    },
     "bn_why": {
       "type": "bn-story",
       "settings": {
@@ -390,12 +324,101 @@
       "settings": {
         "label": "Commencer mon rituel 🌸"
       }
+    },
+    "bn_stats": {
+      "type": "bn-stats",
+      "settings": {
+        "style": "plum",
+        "heading": "",
+        "note": ""
+      },
+      "blocks": {
+        "bn_stats_1": {
+          "type": "stat",
+          "settings": {
+            "number": "15 min",
+            "label": "Pour un rituel complet"
+          }
+        },
+        "bn_stats_2": {
+          "type": "stat",
+          "settings": {
+            "number": "12",
+            "label": "Rituels dans chaque box"
+          }
+        },
+        "bn_stats_3": {
+          "type": "stat",
+          "settings": {
+            "number": "0 DH",
+            "label": "De livraison sur le pack complet"
+          }
+        }
+      },
+      "block_order": [
+        "bn_stats_1",
+        "bn_stats_2",
+        "bn_stats_3"
+      ]
+    },
+    "bn_benefits_icons": {
+      "type": "bn-benefits",
+      "settings": {
+        "heading": "Les bienfaits du rituel",
+        "heading_ar": "شنو غادي تحسي",
+        "style": "white"
+      },
+      "blocks": {
+        "bn_ben_1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "rose",
+            "text": "Un parfum floral et doux de plantes séchées"
+          }
+        },
+        "bn_ben_2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "moon",
+            "text": "Un vrai moment de détente et de calme"
+          }
+        },
+        "bn_ben_3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "calendar",
+            "text": "Votre rendez-vous bien-être de la semaine"
+          }
+        },
+        "bn_ben_4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "steam",
+            "text": "Une chaleur douce et réconfortante"
+          }
+        },
+        "bn_ben_5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "spa",
+            "text": "Une expérience spa, chez vous"
+          }
+        }
+      },
+      "block_order": [
+        "bn_ben_1",
+        "bn_ben_2",
+        "bn_ben_3",
+        "bn_ben_4",
+        "bn_ben_5"
+      ]
     }
   },
   "order": [
     "bn_hero_video",
+    "bn_stats",
+    "bn_benefits_icons",
     "bn_trust",
-    "bn_benefits",
     "bn_why",
     "bn_what",
     "bn_bundle_video",
