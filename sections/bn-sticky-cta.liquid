@@ -1,0 +1,26 @@
+{%- if section.settings.label != blank -%}
+<div class="bn-sticky" data-bn-sticky hidden>
+  <a class="bn-btn bn-btn--block" href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.label }}</a>
+</div>
+<script>
+  (function () {
+    var bar = document.querySelector('[data-bn-sticky]');
+    if (!bar) return;
+    bar.hidden = false;
+    var toggle = function () { bar.classList.toggle('is-visible', window.scrollY > 500); };
+    window.addEventListener('scroll', toggle, { passive: true });
+    toggle();
+  })();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "BN · Sticky button",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Commencer mon rituel 🌸" },
+    { "type": "url", "id": "link", "label": "Link" }
+  ],
+  "presets": [ { "name": "BN · Sticky button" } ]
+}
+{% endschema %}

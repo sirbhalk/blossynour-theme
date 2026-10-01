@@ -1,0 +1,30 @@
+{% doc %}
+  Blossy Nour promo line, tagline and "what's inside" checklist for the product info column.
+{% enddoc %}
+<div class="bn-pblock" {{ block.shopify_attributes }}>
+  {%- if block.settings.promo != blank -%}<p class="bn-pblock__promo">{{ block.settings.promo }}</p>{%- endif -%}
+  {%- if block.settings.tagline != blank -%}<p class="bn-pblock__tagline">{{ block.settings.tagline }}</p>{%- endif -%}
+  {%- if block.settings.tagline_ar != blank -%}<span class="bn-ar" lang="ar">{{ block.settings.tagline_ar }}</span>{%- endif -%}
+  {%- if block.settings.checklist != blank -%}
+    {%- assign lines = block.settings.checklist | newline_to_br | split: '<br />' -%}
+    <ul class="bn-check" role="list">
+      {%- for line in lines -%}
+        {%- assign l = line | strip -%}
+        {%- if l != blank -%}<li>{{ l }}</li>{%- endif -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "BN · Promo & checklist",
+  "settings": [
+    { "type": "text", "id": "promo", "label": "Promo line", "default": "🚚 Livraison gratuite sur ce pack" },
+    { "type": "text", "id": "tagline", "label": "Tagline", "default": "Votre petit moment hammam, chez vous 🌸" },
+    { "type": "text", "id": "tagline_ar", "label": "Arabic / Darija line", "default": "حمام صغير فدارك" },
+    { "type": "textarea", "id": "checklist", "label": "What's inside (one per line)", "default": "1 siège de rituel stable\n12 sachets de plantes séchées\nLa carte du rituel et les consignes de sécurité\nPaiement à la livraison partout au Maroc" }
+  ],
+  "presets": [ { "name": "BN · Promo & checklist" } ]
+}
+{% endschema %}

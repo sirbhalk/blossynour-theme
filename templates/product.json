@@ -299,13 +299,35 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "bn_promo": {
+              "type": "bn-promo",
+              "settings": {
+                "promo": "🚚 Livraison gratuite sur ce pack",
+                "tagline": "Votre petit moment hammam, chez vous 🌸",
+                "tagline_ar": "حمام صغير فدارك",
+                "checklist": "1 siège de rituel stable\n12 sachets de plantes séchées\nLa carte du rituel et les consignes de sécurité\nPaiement à la livraison partout au Maroc"
+              }
+            },
+            "bn_badges": {
+              "type": "bn-trust-badges",
+              "settings": {
+                "icon_1": "leaf",
+                "label_1": "Plantes séchées",
+                "icon_2": "cash",
+                "label_2": "Paiement à la livraison",
+                "icon_3": "box",
+                "label_3": "Colis discret"
+              }
             }
           },
           "block_order": [
             "group_icgrde",
+            "bn_promo",
             "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "bn_badges",
             "text_aEtTtq"
           ]
         }
@@ -467,62 +489,35 @@
         "padding-block-end": 48
       }
     },
-    "bn_p_trust": {
-      "type": "bn-trust",
+    "bn_p_ugc": {
+      "type": "bn-ugc-videos",
       "settings": {
+        "eyebrow": "En vrai",
+        "heading": "Elles ont essayé le rituel",
+        "heading_ar": "شوفي التجربة ديالهم",
         "style": "white"
-      },
-      "blocks": {
-        "bn_p_trust_1": {
-          "type": "item",
-          "settings": {
-            "icon": "rose",
-            "title": "Plantes séchées",
-            "subtitle": "Rose, lavande, camomille"
-          }
-        },
-        "bn_p_trust_2": {
-          "type": "item",
-          "settings": {
-            "icon": "cash",
-            "title": "Paiement à la livraison",
-            "subtitle": "Partout au Maroc"
-          }
-        },
-        "bn_p_trust_3": {
-          "type": "item",
-          "settings": {
-            "icon": "box",
-            "title": "Emballage discret",
-            "subtitle": "Aucun nom sur le colis"
-          }
-        },
-        "bn_p_trust_4": {
-          "type": "item",
-          "settings": {
-            "icon": "shield",
-            "title": "Remplacé si abîmé",
-            "subtitle": "Vérifiez à la livraison"
-          }
-        }
-      },
-      "block_order": [
-        "bn_p_trust_1",
-        "bn_p_trust_2",
-        "bn_p_trust_3",
-        "bn_p_trust_4"
-      ]
+      }
+    },
+    "bn_p_howto": {
+      "type": "bn-video",
+      "settings": {
+        "height": "medium",
+        "overlay": 40,
+        "eyebrow": "Mode d'emploi",
+        "heading": "Comment l'utiliser",
+        "heading_ar": "كيفاش كتخدمي بيه",
+        "button_label": ""
+      }
     },
     "bn_p_steps": {
       "type": "bn-cards",
       "settings": {
-        "anchor": "bn-steps",
+        "anchor": "",
         "eyebrow": "4 étapes simples",
-        "heading": "Comment ça marche",
+        "heading": "En 4 étapes",
         "heading_ar": "كيفاش كتخدمي بيه",
         "numbered": true,
         "columns": 4,
-        "button_label": "",
         "style": "blush",
         "pattern": false
       },
@@ -531,7 +526,7 @@
           "type": "card",
           "settings": {
             "title": "Préparez l'eau",
-            "text": "Faites chauffer de l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
+            "text": "Faites chauffer l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
             "icon": "drop"
           }
         },
@@ -539,7 +534,7 @@
           "type": "card",
           "settings": {
             "title": "Ajoutez un sachet",
-            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet de plantes.",
+            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet.",
             "icon": "leaf"
           }
         },
@@ -547,7 +542,7 @@
           "type": "card",
           "settings": {
             "title": "Testez la vapeur",
-            "text": "Passez la main au-dessus du bol. La chaleur doit être douce et agréable.",
+            "text": "Passez la main au-dessus du bol : la chaleur doit être douce.",
             "icon": "steam"
           }
         },
@@ -555,7 +550,7 @@
           "type": "card",
           "settings": {
             "title": "Détendez-vous",
-            "text": "Installez-vous 10 à 15 minutes. Arrêtez si c'est trop chaud.",
+            "text": "10 à 15 minutes. Arrêtez si c'est trop chaud.",
             "icon": "clock"
           }
         }
@@ -567,98 +562,70 @@
         "bn_p_steps_4"
       ]
     },
-    "bn_p_story": {
-      "type": "bn-story",
-      "settings": {
-        "eyebrow": "Inspiré de nos grands-mères",
-        "heading": "Le hammam marocain, en version douce",
-        "heading_ar": "لحظة ديالك، بالعشوب البلدية",
-        "text": "<p>Chez nous, le hammam a toujours été un moment pour soi. Blossy Nour l'apporte dans votre salle de bain : de l'eau chaude, des plantes séchées et 15 minutes de calme.</p>",
-        "style": "white",
-        "reverse": false
-      },
-      "blocks": {
-        "bn_p_story_1": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Rose",
-            "text": "Un parfum floral et doux",
-            "latin": "Rosa damascena"
-          }
-        },
-        "bn_p_story_2": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Lavande",
-            "text": "Une odeur apaisante",
-            "latin": "Lavandula angustifolia"
-          }
-        },
-        "bn_p_story_3": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Camomille",
-            "text": "Une note douce et chaleureuse",
-            "latin": "Matricaria chamomilla"
-          }
-        }
-      },
-      "block_order": [
-        "bn_p_story_1",
-        "bn_p_story_2",
-        "bn_p_story_3"
-      ]
-    },
-    "bn_p_benefits": {
+    "bn_p_features": {
       "type": "bn-cards",
       "settings": {
-        "eyebrow": "Pourquoi elles l'adorent",
-        "heading": "Un moment rien qu'à vous",
-        "heading_ar": "وقتك، راحتك",
+        "eyebrow": "Votre moment",
+        "heading": "Tout ce qu'il faut savoir",
+        "heading_ar": "كلشي اللي خاصك تعرفي",
         "numbered": false,
-        "columns": 4,
-        "style": "cream",
-        "pattern": true
+        "columns": 5,
+        "style": "white",
+        "pattern": false
       },
       "blocks": {
-        "bn_p_benefits_1": {
+        "bn_p_features_1": {
           "type": "card",
           "settings": {
+            "emoji": "🌙",
             "icon": "moon",
             "title": "Détente",
-            "text": "Une pause chaude et calme à la fin de la journée."
+            "text": "Une pause chaude et calme."
           }
         },
-        "bn_p_benefits_2": {
+        "bn_p_features_2": {
           "type": "card",
           "settings": {
+            "emoji": "🌹",
             "icon": "rose",
             "title": "Parfum doux",
-            "text": "Rose, lavande et camomille dans la vapeur."
+            "text": "Rose, lavande et camomille."
           }
         },
-        "bn_p_benefits_3": {
+        "bn_p_features_3": {
           "type": "card",
           "settings": {
+            "emoji": "💆🏻‍♀️",
             "icon": "heart",
             "title": "Self-care",
-            "text": "Votre rendez-vous de la semaine avec vous-même."
+            "text": "Un rendez-vous avec vous-même."
           }
         },
-        "bn_p_benefits_4": {
+        "bn_p_features_4": {
           "type": "card",
           "settings": {
-            "icon": "sparkle",
-            "title": "Simple",
-            "text": "De l'eau chaude, un sachet, 15 minutes."
+            "emoji": "⏱️",
+            "icon": "clock",
+            "title": "15 minutes",
+            "text": "Simple et rapide, chez vous."
+          }
+        },
+        "bn_p_features_5": {
+          "type": "card",
+          "settings": {
+            "emoji": "🛁",
+            "icon": "steam",
+            "title": "Esprit hammam",
+            "text": "La tradition, en version douce."
           }
         }
       },
       "block_order": [
-        "bn_p_benefits_1",
-        "bn_p_benefits_2",
-        "bn_p_benefits_3",
-        "bn_p_benefits_4"
+        "bn_p_features_1",
+        "bn_p_features_2",
+        "bn_p_features_3",
+        "bn_p_features_4",
+        "bn_p_features_5"
       ]
     },
     "bn_p_reviews": {
@@ -751,16 +718,16 @@
     "bn_p_safety": {
       "type": "bn-safety",
       "settings": {
-        "style": "white"
+        "style": "cream"
       }
     }
   },
   "order": [
     "main",
-    "bn_p_trust",
+    "bn_p_ugc",
+    "bn_p_howto",
     "bn_p_steps",
-    "bn_p_story",
-    "bn_p_benefits",
+    "bn_p_features",
     "bn_p_reviews",
     "bn_p_faq",
     "bn_p_safety",

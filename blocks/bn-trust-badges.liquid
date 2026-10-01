@@ -1,0 +1,36 @@
+{% doc %}
+  Row of three trust badges for the product info column.
+{% enddoc %}
+<ul class="bn-badges" role="list" {{ block.shopify_attributes }}>
+  {%- for i in (1..3) -%}
+    {%- assign icon_key = 'icon_' | append: i -%}
+    {%- assign label_key = 'label_' | append: i -%}
+    {%- if block.settings[label_key] != blank -%}
+      <li class="bn-badges__item">
+        {% render 'bn-icon', name: block.settings[icon_key], class: 'bn-badges__icon' %}
+        <span>{{ block.settings[label_key] }}</span>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
+
+{% schema %}
+{
+  "name": "BN · Trust badges",
+  "settings": [
+    { "type": "select", "id": "icon_1", "label": "Icon 1", "default": "leaf", "options": [
+      { "value": "leaf", "label": "Leaf" }, { "value": "rose", "label": "Rose" }, { "value": "truck", "label": "Truck" }, { "value": "cash", "label": "Cash" }, { "value": "box", "label": "Box" }, { "value": "shield", "label": "Shield" }, { "value": "heart", "label": "Heart" }
+    ] },
+    { "type": "text", "id": "label_1", "label": "Label 1", "default": "Plantes séchées" },
+    { "type": "select", "id": "icon_2", "label": "Icon 2", "default": "cash", "options": [
+      { "value": "leaf", "label": "Leaf" }, { "value": "rose", "label": "Rose" }, { "value": "truck", "label": "Truck" }, { "value": "cash", "label": "Cash" }, { "value": "box", "label": "Box" }, { "value": "shield", "label": "Shield" }, { "value": "heart", "label": "Heart" }
+    ] },
+    { "type": "text", "id": "label_2", "label": "Label 2", "default": "Paiement à la livraison" },
+    { "type": "select", "id": "icon_3", "label": "Icon 3", "default": "box", "options": [
+      { "value": "leaf", "label": "Leaf" }, { "value": "rose", "label": "Rose" }, { "value": "truck", "label": "Truck" }, { "value": "cash", "label": "Cash" }, { "value": "box", "label": "Box" }, { "value": "shield", "label": "Shield" }, { "value": "heart", "label": "Heart" }
+    ] },
+    { "type": "text", "id": "label_3", "label": "Label 3", "default": "Colis discret" }
+  ],
+  "presets": [ { "name": "BN · Trust badges" } ]
+}
+{% endschema %}

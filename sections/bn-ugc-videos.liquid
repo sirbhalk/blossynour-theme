@@ -1,0 +1,55 @@
+{%- liquid
+  assign video_count = 0
+  for block in section.blocks
+    if block.settings.video != blank
+      assign video_count = video_count | plus: 1
+    endif
+  endfor
+-%}
+{%- if video_count > 0 or request.design_mode -%}
+<section class="bn-section bn-ugc bn-section--{{ section.settings.style }}">
+  <div class="bn-container">
+    <div class="bn-center">
+      {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="bn-title">{{ section.settings.heading }}</h2>
+      {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+      <div class="bn-divider"><span></span></div>
+    </div>
+    {%- if video_count > 0 -%}
+      <ul class="bn-ugc__track" role="list">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.video != blank -%}
+            <li class="bn-ugc__item" {{ block.shopify_attributes }}>
+              {{ block.settings.video | video_tag: controls: true, playsinline: true, muted: true, preload: 'metadata', image_size: '600x' }}
+              {%- if block.settings.caption != blank -%}<p class="bn-ugc__caption">{{ block.settings.caption }}</p>{%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <p class="bn-editor-note">Visible uniquement dans l'éditeur : ajoutez des vidéos verticales (UGC) de vraies clientes ou créatrices. La section reste cachée sur le site tant qu'il n'y a aucune vidéo.</p>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "BN · UGC video carousel",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "En vrai" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Elles ont essayé le rituel" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line", "default": "شوفي التجربة ديالهم" },
+    { "type": "select", "id": "style", "label": "Background", "default": "white", "options": [
+      { "value": "cream", "label": "Cream" }, { "value": "blush", "label": "Blush" }, { "value": "white", "label": "White" }
+    ] }
+  ],
+  "blocks": [
+    { "type": "video", "name": "Video", "limit": 8, "settings": [
+      { "type": "video", "id": "video", "label": "Vertical video (9:16)" },
+      { "type": "text", "id": "caption", "label": "Caption" }
+    ] }
+  ],
+  "presets": [ { "name": "BN · UGC video carousel" } ]
+}
+{% endschema %}

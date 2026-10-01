@@ -11,6 +11,8 @@
         <li class="bn-card" {{ block.shopify_attributes }}>
           {%- if section.settings.numbered -%}
             <span class="bn-card__num">{{ forloop.index }}</span>
+          {%- elsif block.settings.emoji != blank -%}
+            <span class="bn-card__emoji" aria-hidden="true">{{ block.settings.emoji }}</span>
           {%- elsif block.settings.icon != 'none' -%}
             {% render 'bn-icon', name: block.settings.icon, class: 'bn-card__icon' %}
           {%- endif -%}
@@ -37,7 +39,7 @@
     { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line" },
     { "type": "richtext", "id": "text", "label": "Intro text" },
     { "type": "checkbox", "id": "numbered", "label": "Show step numbers instead of icons", "default": false },
-    { "type": "range", "id": "columns", "label": "Columns on desktop", "min": 2, "max": 4, "step": 1, "default": 4 },
+    { "type": "range", "id": "columns", "label": "Columns on desktop", "min": 2, "max": 5, "step": 1, "default": 4 },
     { "type": "text", "id": "button_label", "label": "Button label" },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "select", "id": "style", "label": "Background", "default": "cream", "options": [
@@ -52,6 +54,7 @@
         { "value": "heart", "label": "Heart" }, { "value": "moon", "label": "Moon" }, { "value": "clock", "label": "Clock" },
         { "value": "drop", "label": "Drop" }, { "value": "sparkle", "label": "Sparkle" }, { "value": "shield", "label": "Shield" }, { "value": "box", "label": "Box" }
       ] },
+      { "type": "text", "id": "emoji", "label": "Emoji (replaces the icon)" },
       { "type": "text", "id": "title", "label": "Title", "default": "Titre" },
       { "type": "textarea", "id": "text", "label": "Text" }
     ] }

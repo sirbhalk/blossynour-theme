@@ -1,0 +1,56 @@
+{%- liquid
+  assign has_video = false
+  if section.settings.video != blank
+    assign has_video = true
+  endif
+  assign has_media = false
+  if has_video or section.settings.image != blank
+    assign has_media = true
+  endif
+-%}
+<section class="bn-section bn-video bn-video--{{ section.settings.height }}{% unless has_media %} bn-hero--no-image bn-section--pattern{% endunless %}{% if has_media %} bn-video--dark{% endif %}"{% if section.settings.anchor != blank %} id="{{ section.settings.anchor | handleize }}"{% endif %}>
+  {%- if has_media -%}
+    <div class="bn-video__media">
+      {%- if has_video -%}
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, controls: false, image_size: '1600x' }}
+      {%- else -%}
+        {{ section.settings.image | image_url: width: 2400 | image_tag: loading: 'eager', sizes: '100vw' }}
+      {%- endif -%}
+      <span class="bn-video__overlay" style="opacity: {{ section.settings.overlay | divided_by: 100.0 }};"></span>
+    </div>
+  {%- endif -%}
+  <div class="bn-video__content bn-container--narrow bn-center">
+    {%- if section.settings.eyebrow != blank -%}<p class="bn-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      {%- if section.settings.is_h1 -%}<h1 class="bn-title">{{ section.settings.heading }}</h1>{%- else -%}<h2 class="bn-title">{{ section.settings.heading }}</h2>{%- endif -%}
+    {%- endif -%}
+    {%- if section.settings.heading_ar != blank -%}<span class="bn-ar" lang="ar">{{ section.settings.heading_ar }}</span>{%- endif -%}
+    {%- if section.settings.text != blank -%}<div class="bn-lead">{{ section.settings.text }}</div>{%- endif -%}
+    {%- if section.settings.button_label != blank -%}
+      <a class="bn-btn{% if has_media %} bn-btn--light{% endif %}" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BN · Video banner",
+  "settings": [
+    { "type": "video", "id": "video", "label": "Video (uploaded to Shopify)", "info": "Short, silent loop. Plays automatically." },
+    { "type": "image_picker", "id": "image", "label": "Image (used if no video)" },
+    { "type": "range", "id": "overlay", "label": "Dark overlay", "min": 0, "max": 80, "step": 5, "unit": "%", "default": 35 },
+    { "type": "select", "id": "height", "label": "Height", "default": "large", "options": [
+      { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" }, { "value": "full", "label": "Full screen" }
+    ] },
+    { "type": "text", "id": "anchor", "label": "Anchor ID" },
+    { "type": "checkbox", "id": "is_h1", "label": "Use as main page title (H1)", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Votre petit hammam, chez vous" },
+    { "type": "text", "id": "heading_ar", "label": "Arabic / Darija line" },
+    { "type": "richtext", "id": "text", "label": "Text" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Commencer mon rituel" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [ { "name": "BN · Video banner" } ]
+}
+{% endschema %}
