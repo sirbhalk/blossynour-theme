@@ -736,7 +736,7 @@
       ],
       "name": "t:names.product_recommendations",
       "settings": {
-        "product": "",
+        "product": "le-rituel-complet-blossy-nour-siege-12-sachets",
         "recommendation_type": "related",
         "layout_type": "grid",
         "carousel_on_mobile": false,
