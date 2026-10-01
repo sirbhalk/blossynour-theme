@@ -218,8 +218,8 @@
       "type": "bn-whatsapp",
       "settings": {
         "phone": "+212771005580",
-        "label": "Commander sur WhatsApp",
-        "message": "Salam, je veux commander le rituel Blossy Nour"
+        "label": "Order on WhatsApp",
+        "message": "Hello, I'd like to order the Blossy Nour ritual"
       }
     }
   },

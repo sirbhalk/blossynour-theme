@@ -82,7 +82,7 @@
           "type": "message",
           "settings": {
             "icon": "truck",
-            "text": "Livraison gratuite sur le pack complet",
+            "text": "Free delivery on the complete set",
             "link": ""
           }
         },
@@ -90,7 +90,7 @@
           "type": "message",
           "settings": {
             "icon": "rose",
-            "text": "Votre petit hammam, chez vous · حمام صغير فدارك",
+            "text": "Your little hammam at home",
             "link": ""
           }
         },
@@ -98,7 +98,7 @@
           "type": "message",
           "settings": {
             "icon": "cash",
-            "text": "Paiement à la livraison partout au Maroc",
+            "text": "Cash on delivery across Morocco",
             "link": ""
           }
         }

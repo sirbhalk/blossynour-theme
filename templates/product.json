@@ -303,10 +303,10 @@
             "bn_promo": {
               "type": "bn-promo",
               "settings": {
-                "promo": "Livraison gratuite sur ce pack",
-                "tagline": "Votre petit moment hammam, chez vous",
+                "promo": "Free delivery on this set",
+                "tagline": "Your little hammam moment, at home",
                 "tagline_ar": "حمام صغير فدارك",
-                "checklist": "1 siège de rituel stable\n12 sachets de plantes séchées\nLa carte du rituel et les consignes de sécurité\nPaiement à la livraison partout au Maroc",
+                "checklist": "1 sturdy ritual seat\n12 dried herb sachets\nThe ritual card with safety instructions\nCash on delivery across Morocco",
                 "promo_icon": "truck",
                 "tagline_icon": "rose"
               }
@@ -315,11 +315,11 @@
               "type": "bn-trust-badges",
               "settings": {
                 "icon_1": "leaf",
-                "label_1": "Plantes séchées",
+                "label_1": "Dried herbs",
                 "icon_2": "cash",
-                "label_2": "Paiement à la livraison",
+                "label_2": "Cash on delivery",
                 "icon_3": "box",
-                "label_3": "Colis discret"
+                "label_3": "Discreet parcel"
               }
             }
           },
@@ -494,8 +494,8 @@
     "bn_p_ugc": {
       "type": "bn-ugc-videos",
       "settings": {
-        "eyebrow": "En vrai",
-        "heading": "Elles ont essayé le rituel",
+        "eyebrow": "For real",
+        "heading": "They tried the ritual",
         "heading_ar": "شوفي التجربة ديالهم",
         "style": "white"
       }
@@ -505,8 +505,8 @@
       "settings": {
         "height": "medium",
         "overlay": 40,
-        "eyebrow": "Mode d'emploi",
-        "heading": "Comment l'utiliser",
+        "eyebrow": "How it works",
+        "heading": "How to use it",
         "heading_ar": "كيفاش كتخدمي بيه",
         "button_label": ""
       }
@@ -515,8 +515,8 @@
       "type": "bn-cards",
       "settings": {
         "anchor": "",
-        "eyebrow": "4 étapes simples",
-        "heading": "En 4 étapes",
+        "eyebrow": "4 simple steps",
+        "heading": "In 4 steps",
         "heading_ar": "كيفاش كتخدمي بيه",
         "numbered": true,
         "columns": 4,
@@ -527,32 +527,32 @@
         "bn_p_steps_1": {
           "type": "card",
           "settings": {
-            "title": "Préparez l'eau",
-            "text": "Faites chauffer l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante.",
+            "title": "Prepare the water",
+            "text": "Heat the water, then let it cool for 5 minutes. Never boiling water.",
             "icon": "drop"
           }
         },
         "bn_p_steps_2": {
           "type": "card",
           "settings": {
-            "title": "Ajoutez un sachet",
-            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet.",
+            "title": "Add a sachet",
+            "text": "Pour the water into the seat's bowl and add a sachet.",
             "icon": "leaf"
           }
         },
         "bn_p_steps_3": {
           "type": "card",
           "settings": {
-            "title": "Testez la vapeur",
-            "text": "Passez la main au-dessus du bol : la chaleur doit être douce.",
+            "title": "Test the steam",
+            "text": "Hold your hand above the bowl: the warmth should feel gentle.",
             "icon": "steam"
           }
         },
         "bn_p_steps_4": {
           "type": "card",
           "settings": {
-            "title": "Détendez-vous",
-            "text": "10 à 15 minutes. Arrêtez si c'est trop chaud.",
+            "title": "Relax",
+            "text": "10 to 15 minutes. Stop if it feels too hot.",
             "icon": "clock"
           }
         }
@@ -567,8 +567,8 @@
     "bn_p_features": {
       "type": "bn-cards",
       "settings": {
-        "eyebrow": "Votre moment",
-        "heading": "Tout ce qu'il faut savoir",
+        "eyebrow": "Your moment",
+        "heading": "Everything you need to know",
         "heading_ar": "كلشي اللي خاصك تعرفي",
         "numbered": false,
         "columns": 5,
@@ -581,8 +581,8 @@
           "settings": {
             "emoji": "",
             "icon": "moon",
-            "title": "Détente",
-            "text": "Une pause chaude et calme."
+            "title": "Relaxation",
+            "text": "A warm, calm break."
           }
         },
         "bn_p_features_2": {
@@ -590,8 +590,8 @@
           "settings": {
             "emoji": "",
             "icon": "rose",
-            "title": "Parfum doux",
-            "text": "Rose, lavande et camomille."
+            "title": "Soft scent",
+            "text": "Rose, lavender and chamomile."
           }
         },
         "bn_p_features_3": {
@@ -600,7 +600,7 @@
             "emoji": "",
             "icon": "heart",
             "title": "Self-care",
-            "text": "Un rendez-vous avec vous-même."
+            "text": "A date with yourself."
           }
         },
         "bn_p_features_4": {
@@ -609,7 +609,7 @@
             "emoji": "",
             "icon": "clock",
             "title": "15 minutes",
-            "text": "Simple et rapide, chez vous."
+            "text": "Quick and easy, at home."
           }
         },
         "bn_p_features_5": {
@@ -617,8 +617,8 @@
           "settings": {
             "emoji": "",
             "icon": "steam",
-            "title": "Esprit hammam",
-            "text": "La tradition, en version douce."
+            "title": "Hammam spirit",
+            "text": "Tradition, the gentle way."
           }
         }
       },
@@ -633,8 +633,8 @@
     "bn_p_reviews": {
       "type": "bn-reviews",
       "settings": {
-        "eyebrow": "Elles en parlent",
-        "heading": "Leur petit moment à elles",
+        "eyebrow": "What they say",
+        "heading": "Their own little moment",
         "heading_ar": "شنو قالو البنات",
         "style": "blush"
       }
@@ -642,8 +642,8 @@
     "bn_p_faq": {
       "type": "bn-faq",
       "settings": {
-        "eyebrow": "Vos questions",
-        "heading": "Questions fréquentes",
+        "eyebrow": "Your questions",
+        "heading": "Frequently asked questions",
         "heading_ar": "الأسئلة اللي كتطرحو بزاف",
         "open_first": true,
         "style": "cream"
@@ -652,57 +652,57 @@
         "bn_p_faq_1": {
           "type": "question",
           "settings": {
-            "question": "C'est quoi exactement ?",
-            "answer": "<p>Un rituel bien-être à la maison, inspiré du hammam : de l'eau chaude, un sachet de plantes séchées et un siège pour vous installer 10 à 15 minutes. C'est un moment de détente, pas un traitement.</p>"
+            "question": "What is it exactly?",
+            "answer": "<p>An at-home wellness ritual inspired by the hammam: hot water, a sachet of dried herbs and a seat to sit on for 10 to 15 minutes. It's a moment of relaxation, not a treatment.</p>"
           }
         },
         "bn_p_faq_2": {
           "type": "question",
           "settings": {
-            "question": "À quelle fréquence l'utiliser ?",
-            "answer": "<p>Une à deux fois par semaine, quand vous avez envie d'un moment pour vous. Écoutez votre corps.</p>"
+            "question": "How often should I use it?",
+            "answer": "<p>Once or twice a week, whenever you want a moment for yourself. Listen to your body.</p>"
           }
         },
         "bn_p_faq_3": {
           "type": "question",
           "settings": {
-            "question": "Est-ce que ça se boit ?",
-            "answer": "<p>Non. Les plantes sont uniquement pour la vapeur. Ne pas boire, ne pas manger.</p>"
+            "question": "Can I drink it?",
+            "answer": "<p>No. The herbs are for steaming only. Do not drink or eat them.</p>"
           }
         },
         "bn_p_faq_4": {
           "type": "question",
           "settings": {
-            "question": "Je peux l'utiliser pendant mes règles ou si je suis enceinte ?",
-            "answer": "<p>Non. Pas pendant les règles, la grossesse, l'allaitement, ni après un accouchement ou une opération sans l'avis de votre médecin.</p>"
+            "question": "Can I use it during my period or if I'm pregnant?",
+            "answer": "<p>No. Not during your period, pregnancy or breastfeeding, nor after giving birth or surgery without your doctor's advice.</p>"
           }
         },
         "bn_p_faq_5": {
           "type": "question",
           "settings": {
-            "question": "J'ai une odeur inhabituelle ou des pertes, ça va m'aider ?",
-            "answer": "<p>Ce produit ne soigne rien. Une odeur inhabituelle, des pertes, une démangeaison ou une douleur doivent être vues par un médecin ou une sage-femme.</p>"
+            "question": "I have an unusual odor or discharge. Will it help?",
+            "answer": "<p>This product does not treat anything. An unusual odor, discharge, itching or pain should be checked by a doctor or midwife.</p>"
           }
         },
         "bn_p_faq_6": {
           "type": "question",
           "settings": {
-            "question": "Comment je paie ?",
-            "answer": "<p>À la livraison, en espèces. Vous pouvez vérifier le colis devant le livreur. Si un article arrive abîmé, on le remplace.</p>"
+            "question": "How do I pay?",
+            "answer": "<p>In cash, on delivery. You can check the parcel in front of the courier. If an item arrives damaged, we replace it.</p>"
           }
         },
         "bn_p_faq_7": {
           "type": "question",
           "settings": {
-            "question": "Le colis est-il discret ?",
-            "answer": "<p>Oui. Le carton extérieur ne porte aucun nom de produit.</p>"
+            "question": "Is the parcel discreet?",
+            "answer": "<p>Yes. The outer box shows no product name.</p>"
           }
         },
         "bn_p_faq_8": {
           "type": "question",
           "settings": {
-            "question": "Combien de temps pour la livraison ?",
-            "answer": "<p>Le délai dépend de votre ville. Nous vous appelons ou vous écrivons sur WhatsApp pour confirmer la commande avant l'envoi.</p>"
+            "question": "How long does delivery take?",
+            "answer": "<p>It depends on your city. We call you or message you on WhatsApp to confirm your order before shipping.</p>"
           }
         }
       },

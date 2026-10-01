@@ -16,11 +16,11 @@
         "height": "large",
         "anchor": "",
         "is_h1": true,
-        "eyebrow": "Rituel de vapeur aux plantes",
-        "heading": "Votre petit hammam, chez vous",
+        "eyebrow": "Herbal steam ritual",
+        "heading": "Your little hammam, at home",
         "heading_ar": "حمام صغير فدارك",
-        "text": "<p>15 minutes de chaleur douce et de parfums de rose, rien que pour vous.</p>",
-        "button_label": "Commencer mon rituel",
+        "text": "<p>15 minutes of gentle warmth and rose scents, just for you.</p>",
+        "button_label": "Start my ritual",
         "button_link": ""
       }
     },
@@ -87,7 +87,7 @@
           "type": "benefit",
           "settings": {
             "icon": "spa",
-            "text": "Offre une expérience spa apaisante à domicile"
+            "text": "A soothing spa experience at home"
           }
         }
       },
@@ -99,7 +99,7 @@
         "bn_ben_5"
       ],
       "settings": {
-        "heading": "Les bienfaits du rituel",
+        "heading": "What the ritual brings you",
         "heading_ar": "شنو غادي تحسي",
         "style": "white"
       }
@@ -111,32 +111,32 @@
           "type": "item",
           "settings": {
             "icon": "rose",
-            "title": "Plantes séchées",
-            "subtitle": "Rose, lavande, camomille"
+            "title": "Dried herbs",
+            "subtitle": "Rose, lavender, chamomile"
           }
         },
         "bn_trust_2": {
           "type": "item",
           "settings": {
             "icon": "cash",
-            "title": "Paiement à la livraison",
-            "subtitle": "Partout au Maroc"
+            "title": "Cash on delivery",
+            "subtitle": "Across Morocco"
           }
         },
         "bn_trust_3": {
           "type": "item",
           "settings": {
             "icon": "box",
-            "title": "Emballage discret",
-            "subtitle": "Aucun nom sur le colis"
+            "title": "Discreet packaging",
+            "subtitle": "No product name on the parcel"
           }
         },
         "bn_trust_4": {
           "type": "item",
           "settings": {
             "icon": "shield",
-            "title": "Remplacé si abîmé",
-            "subtitle": "Vérifiez à la livraison"
+            "title": "Replaced if damaged",
+            "subtitle": "Check it on delivery"
           }
         }
       },
@@ -157,23 +157,23 @@
           "type": "ingredient",
           "settings": {
             "name": "Simple",
-            "text": "De l'eau chaude, un sachet, 15 minutes",
+            "text": "Hot water, one sachet, 15 minutes",
             "latin": ""
           }
         },
         "bn_why_2": {
           "type": "ingredient",
           "settings": {
-            "name": "Chez vous",
-            "text": "Pas besoin d'aller au hammam",
+            "name": "At home",
+            "text": "No need to go to the hammam",
             "latin": ""
           }
         },
         "bn_why_3": {
           "type": "ingredient",
           "settings": {
-            "name": "Discret",
-            "text": "Colis neutre, paiement à la livraison",
+            "name": "Discreet",
+            "text": "Plain parcel, cash on delivery",
             "latin": ""
           }
         }
@@ -185,11 +185,11 @@
       ],
       "settings": {
         "reverse": true,
-        "eyebrow": "Elles ne s'en passent plus",
-        "heading": "Un rituel simple qui fait du bien",
+        "eyebrow": "They can't do without it",
+        "heading": "A simple ritual that feels good",
         "heading_ar": "لحظة صغيرة، راحة كبيرة",
-        "text": "<p>Un moment rien qu'à vous, chaque semaine, sans sortir de chez vous.</p>",
-        "button_label": "Découvrir le rituel",
+        "text": "<p>A moment just for you, every week, without leaving home.</p>",
+        "button_label": "Discover the ritual",
         "button_link": "",
         "style": "white",
         "check_icons": true
@@ -202,23 +202,23 @@
           "type": "ingredient",
           "settings": {
             "name": "Rose",
-            "text": "Un parfum floral et doux",
+            "text": "A soft floral scent",
             "latin": "Rosa damascena"
           }
         },
         "bn_what_2": {
           "type": "ingredient",
           "settings": {
-            "name": "Lavande",
-            "text": "Une odeur apaisante",
+            "name": "Lavender",
+            "text": "A calming scent",
             "latin": "Lavandula angustifolia"
           }
         },
         "bn_what_3": {
           "type": "ingredient",
           "settings": {
-            "name": "Camomille",
-            "text": "Une note douce et chaleureuse",
+            "name": "Chamomile",
+            "text": "A soft, warm note",
             "latin": "Matricaria chamomilla"
           }
         }
@@ -230,10 +230,10 @@
       ],
       "settings": {
         "reverse": false,
-        "eyebrow": "Le rituel",
-        "heading": "C'est quoi, le rituel de vapeur aux plantes ?",
+        "eyebrow": "The ritual",
+        "heading": "What is the herbal steam ritual?",
         "heading_ar": "شنو هو البخار بالعشوب؟",
-        "text": "<p>Une tradition de bien-être : vous vous installez au-dessus d'un bol d'eau chaude parfumée aux plantes séchées, pour un moment de chaleur et de calme. Un geste de détente, pas un soin médical.</p>",
+        "text": "<p>A wellness tradition: you sit above a bowl of hot water scented with dried herbs, for a moment of warmth and calm. A relaxation ritual, not a medical treatment.</p>",
         "button_label": "",
         "button_link": "",
         "style": "cream"
@@ -246,11 +246,11 @@
         "height": "medium",
         "anchor": "",
         "is_h1": false,
-        "eyebrow": "Le pack complet",
-        "heading": "Complétez votre rituel",
+        "eyebrow": "The complete set",
+        "heading": "Complete your ritual",
         "heading_ar": "كلشي اللي خاصك فبوكس واحد",
-        "text": "<p>Le siège + 12 sachets de plantes. Livraison gratuite.</p>",
-        "button_label": "Je prends le pack complet",
+        "text": "<p>The seat + 12 herb sachets. Free delivery.</p>",
+        "button_label": "Get the complete set",
         "button_link": ""
       }
     },
@@ -262,8 +262,8 @@
           "settings": {
             "icon": "drop",
             "emoji": "",
-            "title": "Préparez l'eau",
-            "text": "Faites chauffer l'eau, puis laissez-la refroidir 5 minutes. Jamais d'eau bouillante."
+            "title": "Prepare the water",
+            "text": "Heat the water, then let it cool for 5 minutes. Never boiling water."
           }
         },
         "bn_steps_2": {
@@ -271,8 +271,8 @@
           "settings": {
             "icon": "leaf",
             "emoji": "",
-            "title": "Ajoutez un sachet",
-            "text": "Versez l'eau dans le bol du siège et ajoutez un sachet."
+            "title": "Add a sachet",
+            "text": "Pour the water into the seat's bowl and add a sachet."
           }
         },
         "bn_steps_3": {
@@ -280,8 +280,8 @@
           "settings": {
             "icon": "steam",
             "emoji": "",
-            "title": "Testez la vapeur",
-            "text": "Passez la main au-dessus du bol : la chaleur doit être douce."
+            "title": "Test the steam",
+            "text": "Hold your hand above the bowl: the warmth should feel gentle."
           }
         },
         "bn_steps_4": {
@@ -289,8 +289,8 @@
           "settings": {
             "icon": "clock",
             "emoji": "",
-            "title": "Détendez-vous",
-            "text": "10 à 15 minutes. Arrêtez si c'est trop chaud."
+            "title": "Relax",
+            "text": "10 to 15 minutes. Stop if it feels too hot."
           }
         }
       },
@@ -302,8 +302,8 @@
       ],
       "settings": {
         "anchor": "bn-steps",
-        "eyebrow": "4 étapes simples",
-        "heading": "Comment l'utiliser",
+        "eyebrow": "4 simple steps",
+        "heading": "How to use it",
         "heading_ar": "كيفاش كتخدمي بيه",
         "text": "",
         "numbered": true,
@@ -320,57 +320,57 @@
         "bn_faq_1": {
           "type": "question",
           "settings": {
-            "question": "C'est quoi exactement ?",
-            "answer": "<p>Un rituel bien-être à la maison, inspiré du hammam : de l'eau chaude, un sachet de plantes séchées et un siège pour vous installer 10 à 15 minutes. C'est un moment de détente, pas un traitement.</p>"
+            "question": "What is it exactly?",
+            "answer": "<p>An at-home wellness ritual inspired by the hammam: hot water, a sachet of dried herbs and a seat to sit on for 10 to 15 minutes. It's a moment of relaxation, not a treatment.</p>"
           }
         },
         "bn_faq_2": {
           "type": "question",
           "settings": {
-            "question": "À quelle fréquence l'utiliser ?",
-            "answer": "<p>Une à deux fois par semaine, quand vous avez envie d'un moment pour vous. Écoutez votre corps.</p>"
+            "question": "How often should I use it?",
+            "answer": "<p>Once or twice a week, whenever you want a moment for yourself. Listen to your body.</p>"
           }
         },
         "bn_faq_3": {
           "type": "question",
           "settings": {
-            "question": "Est-ce que ça se boit ?",
-            "answer": "<p>Non. Les plantes sont uniquement pour la vapeur. Ne pas boire, ne pas manger.</p>"
+            "question": "Can I drink it?",
+            "answer": "<p>No. The herbs are for steaming only. Do not drink or eat them.</p>"
           }
         },
         "bn_faq_4": {
           "type": "question",
           "settings": {
-            "question": "Je peux l'utiliser pendant mes règles ou si je suis enceinte ?",
-            "answer": "<p>Non. Pas pendant les règles, la grossesse, l'allaitement, ni après un accouchement ou une opération sans l'avis de votre médecin.</p>"
+            "question": "Can I use it during my period or if I'm pregnant?",
+            "answer": "<p>No. Not during your period, pregnancy or breastfeeding, nor after giving birth or surgery without your doctor's advice.</p>"
           }
         },
         "bn_faq_5": {
           "type": "question",
           "settings": {
-            "question": "J'ai une odeur inhabituelle ou des pertes, ça va m'aider ?",
-            "answer": "<p>Ce produit ne soigne rien. Une odeur inhabituelle, des pertes, une démangeaison ou une douleur doivent être vues par un médecin ou une sage-femme.</p>"
+            "question": "I have an unusual odor or discharge. Will it help?",
+            "answer": "<p>This product does not treat anything. An unusual odor, discharge, itching or pain should be checked by a doctor or midwife.</p>"
           }
         },
         "bn_faq_6": {
           "type": "question",
           "settings": {
-            "question": "Comment je paie ?",
-            "answer": "<p>À la livraison, en espèces. Vous pouvez vérifier le colis devant le livreur. Si un article arrive abîmé, on le remplace.</p>"
+            "question": "How do I pay?",
+            "answer": "<p>In cash, on delivery. You can check the parcel in front of the courier. If an item arrives damaged, we replace it.</p>"
           }
         },
         "bn_faq_7": {
           "type": "question",
           "settings": {
-            "question": "Le colis est-il discret ?",
-            "answer": "<p>Oui. Le carton extérieur ne porte aucun nom de produit.</p>"
+            "question": "Is the parcel discreet?",
+            "answer": "<p>Yes. The outer box shows no product name.</p>"
           }
         },
         "bn_faq_8": {
           "type": "question",
           "settings": {
-            "question": "Combien de temps pour la livraison ?",
-            "answer": "<p>Le délai dépend de votre ville. Nous vous appelons ou vous écrivons sur WhatsApp pour confirmer la commande avant l'envoi.</p>"
+            "question": "How long does delivery take?",
+            "answer": "<p>It depends on your city. We call you or message you on WhatsApp to confirm your order before shipping.</p>"
           }
         }
       },
@@ -385,8 +385,8 @@
         "bn_faq_8"
       ],
       "settings": {
-        "eyebrow": "Vos questions",
-        "heading": "Questions fréquentes",
+        "eyebrow": "Your questions",
+        "heading": "Frequently asked questions",
         "heading_ar": "الأسئلة اللي كتطرحو بزاف",
         "open_first": true,
         "style": "cream"
@@ -395,8 +395,8 @@
     "bn_reviews": {
       "type": "bn-reviews",
       "settings": {
-        "eyebrow": "Elles en parlent",
-        "heading": "Leur petit moment à elles",
+        "eyebrow": "What they say",
+        "heading": "Their own little moment",
         "heading_ar": "شنو قالو البنات",
         "style": "blush"
       }
@@ -407,8 +407,8 @@
         "collection": "",
         "limit": 3,
         "columns": 3,
-        "eyebrow": "La boutique",
-        "heading": "Nos rituels",
+        "eyebrow": "The shop",
+        "heading": "Our rituals",
         "heading_ar": "اختاري اللي يناسبك",
         "style": "white"
       }
@@ -416,17 +416,17 @@
     "bn_safety": {
       "type": "bn-safety",
       "settings": {
-        "heading": "Sécurité & précautions",
+        "heading": "Safety & precautions",
         "heading_ar": "قريها قبل ما تستعملي",
-        "list": "<ul><li>Usage externe uniquement. Ne pas boire, ne pas manger, ne rien introduire dans le vagin.</li><li>Risque de brûlure : ne jamais s'asseoir au-dessus d'une eau bouillante. Laissez refroidir et testez la vapeur avec la main.</li><li>Ne pas utiliser pendant la grossesse, l'allaitement, les règles, après un accouchement ou une opération sans avis médical.</li><li>Ne pas utiliser en cas de plaie, irritation, infection ou fièvre.</li><li>Contient de la camomille : ne pas utiliser en cas d'allergie aux Astéracées.</li><li>Arrêtez en cas de démangeaison, rougeur ou irritation.</li><li>Une odeur inhabituelle, des pertes ou une douleur nécessitent une consultation médicale.</li><li>Réservé aux plus de 18 ans. Tenir hors de portée des enfants.</li></ul>",
-        "note": "Ce produit n'est pas un médicament. Il ne diagnostique, ne traite et ne prévient aucune maladie.",
+        "list": "<ul><li>For external use only. Do not drink, do not eat, do not insert anything into the vagina.</li><li>Risk of burns: never sit above boiling water. Let it cool and test the steam with your hand.</li><li>Do not use during pregnancy, breastfeeding, your period, after giving birth or surgery without medical advice.</li><li>Do not use if you have a wound, irritation, infection or fever.</li><li>Contains chamomile: do not use if you are allergic to the Asteraceae family.</li><li>Stop if you feel itching, redness or irritation.</li><li>An unusual odor, discharge or pain requires a medical consultation.</li><li>For adults over 18 only. Keep out of reach of children.</li></ul>",
+        "note": "This product is not a medicine. It does not diagnose, treat or prevent any disease.",
         "style": "cream"
       }
     },
     "bn_sticky": {
       "type": "bn-sticky-cta",
       "settings": {
-        "label": "Commencer mon rituel",
+        "label": "Start my ritual",
         "link": ""
       }
     }
